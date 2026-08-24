@@ -16,13 +16,13 @@ export const site = {
   mentor: 'Dr. Jessica Allen',
   mentorTitle: 'Faculty Research Mentor',
   // TODO: replace with your real production URL after the first Vercel deploy.
-  url: 'https://sneaker-research-portfolio.vercel.app',
+  url: 'https://sneaker-research-portfolio-real-q82.vercel.app/',
   // TODO: replace with the email address you want reviewers to use.
-  email: 'your.email@ufl.edu',
+  email: 'aidan.copeland@ufl.edu',
   // TODO: replace with your LinkedIn URL, or set to an empty string to hide the link.
-  linkedin: '',
+  linkedin: 'https://www.linkedin.com/in/aidan-copeland/',
   // TODO: drop a PDF at public/documents/resume.pdf, then set this to '/documents/resume.pdf'.
-  resume: '',
+  resume: '/documents/updated-resumé.pdf',
   // TODO: replace with your repository URL, or set to an empty string to hide the link.
   repository: '',
 } as const;
