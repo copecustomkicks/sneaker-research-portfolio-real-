@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import type { Metadata } from 'next';
 import { PageHeader } from '@/components/PageHeader';
 import { Section, SpecRail } from '@/components/Section';
@@ -54,6 +55,16 @@ export default function AboutPage() {
           </div>
 
           <aside className="space-y-5">
+            <div className="card overflow-hidden">
+              <Image
+                src="/images/aidan-copeland-headshot.jpg"
+                alt="Aidan Copeland"
+                width={640}
+                height={920}
+                className="h-auto w-full object-cover"
+                priority
+              />
+            </div>
             <div className="card p-6">
               <p className="eyebrow mb-3">Relevant experience</p>
               <ul className="space-y-3 text-[0.9375rem] leading-relaxed text-ink">
