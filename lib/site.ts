@@ -22,7 +22,7 @@ export const site = {
   // TODO: replace with your LinkedIn URL, or set to an empty string to hide the link.
   linkedin: 'https://www.linkedin.com/in/aidan-copeland/',
   // TODO: drop a PDF at public/documents/resume.pdf, then set this to '/documents/resume.pdf'.
-  resume: '/documents/updated-resumé.pdf',
+  resume: '/documents/aidan-copeland-resume.pdf',
   // TODO: replace with your repository URL, or set to an empty string to hide the link.
   repository: '',
 } as const;
