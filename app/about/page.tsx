@@ -33,7 +33,7 @@ export default function AboutPage() {
         }
       />
 
-            <Section eyebrow="Biography" title="Background">
+      <Section eyebrow="Biography" title="Background">
         <div className="grid gap-10 lg:grid-cols-[2fr_1fr]">
           <div className="space-y-8">
             <div className="max-w-prose space-y-5 text-[1.0625rem] leading-relaxed text-ink">
@@ -79,29 +79,14 @@ export default function AboutPage() {
                 <p className="eyebrow mb-3">Contact</p>
                 <ul className="space-y-3 text-[0.9375rem]">
                   <li>
-                    <a href={`mailto:${site.email}`} className="text-uf-blue hover:underline">
-                      Email {site.researcher.split(' ')[0]}
-                    </a>
+                    <a href={`mailto:${site.email}`} className="text-uf-blue hover:underline">Email {site.researcher.split(' ')[0]}</a>
                     <span className="mt-0.5 block text-[0.875rem] text-ink-muted">{site.email}</span>
                   </li>
                   <li className="border-t border-rule pt-3">
-                    {site.linkedin ? (
-                      
-                        href={site.linkedin}
-                        className="text-uf-blue hover:underline"
-                        rel="noreferrer noopener"
-                        target="_blank"
-                      >
-                        LinkedIn profile
-                      </a>
-                    ) : null}
+                    <a href={site.linkedin} className="text-uf-blue hover:underline" rel="noreferrer noopener" target="_blank">LinkedIn profile</a>
                   </li>
                   <li className="border-t border-rule pt-3">
-                    {site.resume ? (
-                      <a href={site.resume} download className="text-uf-blue hover:underline">
-                        Download résumé (PDF)
-                      </a>
-                    ) : null}
+                    <a href={site.resume} download className="text-uf-blue hover:underline">Download résumé (PDF)</a>
                   </li>
                 </ul>
               </div>
