@@ -33,98 +33,91 @@ export default function AboutPage() {
         }
       />
 
-      <Section eyebrow="Biography" title="Background">
+            <Section eyebrow="Biography" title="Background">
         <div className="grid gap-10 lg:grid-cols-[2fr_1fr]">
-          <div className="max-w-prose space-y-5 text-[1.0625rem] leading-relaxed text-ink">
-            <p>
-              I am a mechanical engineering student at the University of Florida, graduating in{' '}
-              {site.graduation}. My work centers on product development: material selection, CAD,
-              prototyping, testing, and design for manufacturing.
-            </p>
-            <p>
-              Since 2019 I have run Cope Custom Kicks, a hand-painted custom sneaker business, and
-              customized more than fifty pairs. That work is all surface work — preparation, masking,
-              paint, finishing, durability under real wear. It taught me how footwear materials behave
-              in the hand, and made obvious how little I knew about why the shoe underneath is built
-              the way it is.
-            </p>
-            <p>
-              This project is my attempt to answer that with engineering methods rather than styling,
-              and to move toward footwear product development as a career.
-            </p>
+          <div className="space-y-8">
+            <div className="max-w-prose space-y-5 text-[1.0625rem] leading-relaxed text-ink">
+              <p>
+                I am a mechanical engineering student at the University of Florida, graduating in{' '}
+                {site.graduation}. My work centers on product development: material selection, CAD,
+                prototyping, testing, and design for manufacturing.
+              </p>
+              <p>
+                Since 2019 I have run Cope Custom Kicks, a hand-painted custom sneaker business, and
+                customized more than fifty pairs. That work is all surface work — preparation, masking,
+                paint, finishing, durability under real wear. It taught me how footwear materials behave
+                in the hand, and made obvious how little I knew about why the shoe underneath is built
+                the way it is.
+              </p>
+              <p>
+                This project is my attempt to answer that with engineering methods rather than styling,
+                and to move toward footwear product development as a career.
+              </p>
+            </div>
+
+            <div className="grid gap-5 sm:grid-cols-2">
+              <div className="card p-6">
+                <p className="eyebrow mb-3">Relevant experience</p>
+                <ul className="space-y-3 text-[0.9375rem] leading-relaxed text-ink">
+                  {[
+                    'Custom sneaker design and finishing — 50+ pairs since 2019',
+                    'Surface preparation, masking, coatings, sealing, and durability assessment',
+                    'Product development and iterative design',
+                    'Material selection and design for manufacturing',
+                    'CAD modeling and prototyping',
+                    'Testing, quality control, and failure analysis',
+                  ].map((item) => (
+                    <li key={item} className="flex gap-2.5 border-t border-rule pt-3 first:border-0 first:pt-0">
+                      <span aria-hidden="true" className="mt-[0.6em] h-px w-2.5 shrink-0 bg-rule-strong" />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              <div className="card p-6">
+                <p className="eyebrow mb-3">Contact</p>
+                <ul className="space-y-3 text-[0.9375rem]">
+                  <li>
+                    <a href={`mailto:${site.email}`} className="text-uf-blue hover:underline">
+                      Email {site.researcher.split(' ')[0]}
+                    </a>
+                    <span className="mt-0.5 block text-[0.875rem] text-ink-muted">{site.email}</span>
+                  </li>
+                  <li className="border-t border-rule pt-3">
+                    {site.linkedin ? (
+                      
+                        href={site.linkedin}
+                        className="text-uf-blue hover:underline"
+                        rel="noreferrer noopener"
+                        target="_blank"
+                      >
+                        LinkedIn profile
+                      </a>
+                    ) : null}
+                  </li>
+                  <li className="border-t border-rule pt-3">
+                    {site.resume ? (
+                      <a href={site.resume} download className="text-uf-blue hover:underline">
+                        Download résumé (PDF)
+                      </a>
+                    ) : null}
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
 
-          <aside className="space-y-5">
-            <div className="card overflow-hidden">
+          <aside className="h-full">
+            <div className="card h-full overflow-hidden">
               <Image
                 src="/images/aidan-copeland-headshot.jpg"
                 alt="Aidan Copeland"
                 width={640}
                 height={920}
-                className="h-auto w-full object-cover"
+                className="h-full w-full object-cover object-center"
                 priority
               />
-            </div>
-            <div className="card p-6">
-              <p className="eyebrow mb-3">Relevant experience</p>
-              <ul className="space-y-3 text-[0.9375rem] leading-relaxed text-ink">
-                {[
-                  'Custom sneaker design and finishing — 50+ pairs since 2019',
-                  'Surface preparation, masking, coatings, sealing, and durability assessment',
-                  'Product development and iterative design',
-                  'Material selection and design for manufacturing',
-                  'CAD modeling and prototyping',
-                  'Testing, quality control, and failure analysis',
-                ].map((item) => (
-                  <li key={item} className="flex gap-2.5 border-t border-rule pt-3 first:border-0 first:pt-0">
-                    <span aria-hidden="true" className="mt-[0.6em] h-px w-2.5 shrink-0 bg-rule-strong" />
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            <div className="card p-6">
-              <p className="eyebrow mb-3">Contact</p>
-              <ul className="space-y-3 text-[0.9375rem]">
-                <li>
-                  <a href={`mailto:${site.email}`} className="text-uf-blue hover:underline">
-                    Email {site.researcher.split(' ')[0]}
-                  </a>
-                  <span className="mt-0.5 block text-[0.875rem] text-ink-muted">{site.email}</span>
-                </li>
-                <li className="border-t border-rule pt-3">
-                  {site.linkedin ? (
-                    <a
-                      href={site.linkedin}
-                      className="text-uf-blue hover:underline"
-                      rel="noreferrer noopener"
-                      target="_blank"
-                    >
-                      LinkedIn profile
-                    </a>
-                  ) : (
-                    <span className="text-ink-muted">
-                      LinkedIn — add your URL to{' '}
-                      <code className="font-mono text-[0.8125rem]">lib/site.ts</code>
-                    </span>
-                  )}
-                </li>
-                <li className="border-t border-rule pt-3">
-                  {site.resume ? (
-                    <a href={site.resume} download className="text-uf-blue hover:underline">
-                      Download résumé (PDF)
-                    </a>
-                  ) : (
-                    <span className="text-ink-muted">
-                      Résumé — drop a PDF in{' '}
-                      <code className="font-mono text-[0.8125rem]">public/documents/</code> and set{' '}
-                      <code className="font-mono text-[0.8125rem]">resume</code> in{' '}
-                      <code className="font-mono text-[0.8125rem]">lib/site.ts</code>
-                    </span>
-                  )}
-                </li>
-              </ul>
             </div>
           </aside>
         </div>
