@@ -95,13 +95,6 @@ export default function AboutPage() {
                         LinkedIn profile
                       </a>
                     ) : null}
-                        className="text-uf-blue hover:underline"
-                        rel="noreferrer noopener"
-                        target="_blank"
-                      >
-                        LinkedIn profile
-                      </a>
-                    ) : null}
                   </li>
                   <li className="border-t border-rule pt-3">
                     {site.resume ? (
