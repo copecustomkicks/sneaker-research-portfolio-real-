@@ -204,7 +204,7 @@ function MaterialCard({ material }: { material: Material }) {
       </div>
 
       <h3 className="text-xl leading-snug">
-        <Link href={`/materials/${material.id}`} className="hover:text-uf-blue hover:underline">
+        <Link href={`/materials/${material.id}`} className="hover:text-[var(--accent)] hover:underline">
           {material.name}
         </Link>
       </h3>
@@ -226,7 +226,7 @@ function MaterialCard({ material }: { material: Material }) {
 
       <Link
         href={`/materials/${material.id}`}
-        className="mt-6 inline-block text-[0.9375rem] font-medium text-uf-blue hover:underline"
+        className="mt-6 inline-block text-[0.9375rem] font-medium text-[var(--accent)] hover:underline"
       >
         Full record for {material.name}
       </Link>
@@ -288,7 +288,7 @@ function ComparisonTable({ materials }: { materials: Material[] }) {
         <Link
           key="name"
           href={`/materials/${material.id}`}
-          className="font-medium text-uf-blue hover:underline"
+          className="font-medium text-[var(--accent)] hover:underline"
         >
           {material.name}
         </Link>,

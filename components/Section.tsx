@@ -25,7 +25,7 @@ export function Section({
   return (
     <Tag id={id} className={cn('py-12 sm:py-16', className)}>
       {(eyebrow || title || description || action) && (
-        <div className="mb-8 flex flex-col gap-4 border-b border-rule pb-5 sm:flex-row sm:items-end sm:justify-between">
+        <div className="mb-8 flex flex-col gap-4 border-b border-[var(--accent)] pb-5 sm:flex-row sm:items-end sm:justify-between">
           <div className="max-w-prose">
             {eyebrow && <p className="eyebrow mb-2">{eyebrow}</p>}
             {title && <h2 className="text-2xl sm:text-[1.75rem]">{title}</h2>}

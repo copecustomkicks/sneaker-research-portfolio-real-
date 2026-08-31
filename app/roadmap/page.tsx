@@ -23,7 +23,7 @@ export default function RoadmapPage() {
   const current = getCurrentPhase();
 
   return (
-    <div className="shell pb-20">
+    <div className="shell sec-project pb-20">
       <PageHeader
         eyebrow="Research roadmap"
         title="Eleven phases from background research to oral defense"
@@ -59,12 +59,12 @@ export default function RoadmapPage() {
             {phases.map((phase) => (
               <li key={phase.id}>
                 <div className="mb-1.5 flex flex-wrap items-baseline gap-x-3 gap-y-1">
-                  <span className="font-mono text-micro text-uf-blue">
+                  <span className="font-mono text-micro text-[var(--accent)]">
                     P{String(phase.number).padStart(2, '0')}
                   </span>
                   <a
                     href={`#${phase.id}`}
-                    className="text-[0.9375rem] text-ink hover:text-uf-blue hover:underline"
+                    className="text-[0.9375rem] text-ink hover:text-[var(--accent)] hover:underline"
                   >
                     {phase.name}
                   </a>
@@ -91,7 +91,7 @@ export default function RoadmapPage() {
             return (
               <li key={phase.id} id={phase.id} className="card scroll-mt-24 p-6 sm:p-8">
                 <div className="flex flex-wrap items-center gap-3">
-                  <span className="font-mono text-micro font-semibold text-uf-blue">
+                  <span className="font-mono text-micro font-semibold text-[var(--accent)]">
                     Phase {String(phase.number).padStart(2, '0')}
                   </span>
                   <StatusBadge status={phase.status} />
@@ -132,7 +132,7 @@ export default function RoadmapPage() {
                       <Link
                         key={entry.slug}
                         href={`/research-log/${entry.slug}`}
-                        className="text-[0.875rem] font-medium text-uf-blue hover:underline"
+                        className="text-[0.875rem] font-medium text-[var(--accent)] hover:underline"
                       >
                         Week {String(entry.week).padStart(2, '0')}: {entry.title}
                       </Link>
@@ -141,7 +141,7 @@ export default function RoadmapPage() {
                       <Link
                         key={link.href}
                         href={link.href}
-                        className="text-[0.875rem] font-medium text-uf-blue hover:underline"
+                        className="text-[0.875rem] font-medium text-[var(--accent)] hover:underline"
                       >
                         {link.label}
                       </Link>

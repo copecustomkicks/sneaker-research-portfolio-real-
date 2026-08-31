@@ -20,7 +20,7 @@ export default function GalleryPage() {
   const typesPresent = Array.from(new Set(artifacts.map((artifact) => artifact.type)));
 
   return (
-    <div className="shell pb-20">
+    <div className="shell sec-build pb-20">
       <PageHeader
         eyebrow="Gallery"
         title="Artifacts from the process"
@@ -64,9 +64,7 @@ export default function GalleryPage() {
             }
           >
             The gallery fills up as work happens: benchmark teardowns in Phase 2, material samples in
-            Phase 3, sketches and CAD in Phases 5 and 7, then build and test photographs. Add records
-            to <code className="font-mono text-[0.875rem]">data/artifacts.ts</code> and put the files
-            in <code className="font-mono text-[0.875rem]">public/images/</code>.
+            Phase 3, sketches and CAD in Phases 5 and 7, then build and test photographs.
           </EmptyState>
         ) : (
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -116,7 +114,7 @@ function ArtifactTile({ artifact }: { artifact: Artifact }) {
             <div className="border-t border-rule pt-2.5">
               <dt>Phase</dt>
               <dd>
-                <Link href={`/roadmap#${phase.id}`} className="text-uf-blue hover:underline">
+                <Link href={`/roadmap#${phase.id}`} className="text-[var(--accent)] hover:underline">
                   Phase {phase.number} — {phase.name}
                 </Link>
               </dd>
@@ -128,7 +126,7 @@ function ArtifactTile({ artifact }: { artifact: Artifact }) {
               <dd>
                 <Link
                   href={`/research-log/${artifact.relatedLogSlug}`}
-                  className="text-uf-blue hover:underline"
+                  className="text-[var(--accent)] hover:underline"
                 >
                   Read the entry
                 </Link>
@@ -139,7 +137,7 @@ function ArtifactTile({ artifact }: { artifact: Artifact }) {
             <div className="border-t border-rule pt-2.5">
               <dt>File</dt>
               <dd>
-                <a href={artifact.downloadHref} download className="text-uf-blue hover:underline">
+                <a href={artifact.downloadHref} download className="text-[var(--accent)] hover:underline">
                   Download {artifact.title}
                 </a>
               </dd>

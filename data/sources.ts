@@ -118,8 +118,7 @@ export const sourceTypeLabels: Record<SourceType, string> = {
   other: 'Other',
 };
 
-export const citationStyleNote =
-  'References follow APA 7th edition. If your program requires a different style, change the citation strings in data/sources.ts and update this note.';
+export const citationStyleNote = 'References follow APA 7th edition.';
 
 export function getSource(id: string): Source | undefined {
   return sources.find((source) => source.id === id);

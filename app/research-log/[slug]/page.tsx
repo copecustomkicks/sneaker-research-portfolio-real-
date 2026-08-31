@@ -50,7 +50,7 @@ export default async function ResearchLogEntryPage({ params }: PageProps) {
   const phase = getPhaseByName(entry.phase);
 
   return (
-    <div className="shell pb-20">
+    <div className="shell sec-project pb-20">
       <article>
         <header className="border-b border-rule pb-9 pt-8 sm:pt-12">
           <Breadcrumbs
@@ -78,7 +78,7 @@ export default async function ResearchLogEntryPage({ params }: PageProps) {
               {
                 label: 'Research phase',
                 value: phase ? (
-                  <Link href={`/roadmap#${phase.id}`} className="text-uf-blue hover:underline">
+                  <Link href={`/roadmap#${phase.id}`} className="text-[var(--accent)] hover:underline">
                     {entry.phase}
                   </Link>
                 ) : (
@@ -156,7 +156,7 @@ export default async function ResearchLogEntryPage({ params }: PageProps) {
             className="card group p-5 transition-shadow hover:shadow-card"
           >
             <p className="eyebrow mb-1.5">&larr; Previous entry</p>
-            <p className="text-[0.9375rem] font-medium text-ink group-hover:text-uf-blue group-hover:underline">
+            <p className="text-[0.9375rem] font-medium text-ink group-hover:text-[var(--accent)] group-hover:underline">
               Week {String(previous.week).padStart(2, '0')}: {previous.title}
             </p>
           </Link>
@@ -173,7 +173,7 @@ export default async function ResearchLogEntryPage({ params }: PageProps) {
             className="card group p-5 text-right transition-shadow hover:shadow-card"
           >
             <p className="eyebrow mb-1.5">Next entry &rarr;</p>
-            <p className="text-[0.9375rem] font-medium text-ink group-hover:text-uf-blue group-hover:underline">
+            <p className="text-[0.9375rem] font-medium text-ink group-hover:text-[var(--accent)] group-hover:underline">
               Week {String(next.week).padStart(2, '0')}: {next.title}
             </p>
           </Link>
@@ -186,7 +186,7 @@ export default async function ResearchLogEntryPage({ params }: PageProps) {
       </nav>
 
       <p className="mt-8">
-        <Link href="/research-log" className="text-[0.9375rem] font-medium text-uf-blue hover:underline">
+        <Link href="/research-log" className="text-[0.9375rem] font-medium text-[var(--accent)] hover:underline">
           Back to all research-log entries
         </Link>
       </p>

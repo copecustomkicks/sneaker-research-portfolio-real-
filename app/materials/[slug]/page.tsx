@@ -42,8 +42,8 @@ export default async function MaterialPage({ params }: PageProps) {
   const hasSafetyFlag = material.safetyConsiderations.startsWith('FLAGGED');
 
   return (
-    <div className="shell pb-20">
-      <header className="border-b border-rule pb-9 pt-8 sm:pt-12">
+    <div className="shell sec-research pb-20">
+      <header className="border-b border-[var(--accent)] pb-9 pt-8 sm:pt-12">
         <Breadcrumbs
           items={[{ label: 'Materials', href: '/materials' }, { label: material.name }]}
         />
@@ -86,7 +86,7 @@ export default async function MaterialPage({ params }: PageProps) {
             property.value,
             <EvidenceBadge key="evidence" type={property.evidence} />,
             property.sourceId ? (
-              <Link key="source" href={`/sources#${property.sourceId}`} className="text-uf-blue hover:underline">
+              <Link key="source" href={`/sources#${property.sourceId}`} className="text-[var(--accent)] hover:underline">
                 {getSource(property.sourceId)?.citation ?? property.sourceId}
               </Link>
             ) : (
@@ -152,7 +152,7 @@ export default async function MaterialPage({ params }: PageProps) {
                   const source = getSource(id);
                   return (
                     <li key={id}>
-                      <Link href={`/sources#${id}`} className="text-uf-blue hover:underline">
+                      <Link href={`/sources#${id}`} className="text-[var(--accent)] hover:underline">
                         {source?.citation ?? id}
                       </Link>
                     </li>
@@ -169,7 +169,7 @@ export default async function MaterialPage({ params }: PageProps) {
               <ul className="space-y-2 text-[0.9375rem]">
                 {relatedEntries.map((entry) => (
                   <li key={entry.slug}>
-                    <Link href={`/research-log/${entry.slug}`} className="text-uf-blue hover:underline">
+                    <Link href={`/research-log/${entry.slug}`} className="text-[var(--accent)] hover:underline">
                       Week {String(entry.week).padStart(2, '0')}: {entry.title}
                     </Link>
                   </li>
@@ -180,7 +180,7 @@ export default async function MaterialPage({ params }: PageProps) {
         </div>
 
         <p className="mt-10">
-          <Link href="/materials" className="text-[0.9375rem] font-medium text-uf-blue hover:underline">
+          <Link href="/materials" className="text-[0.9375rem] font-medium text-[var(--accent)] hover:underline">
             Back to all material records
           </Link>
         </p>

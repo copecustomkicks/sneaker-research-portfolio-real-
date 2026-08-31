@@ -222,7 +222,7 @@ export function LogCard({ entry, activeTag }: { entry: ResearchLogSummary; activ
       </div>
 
       <h3 className="text-xl leading-snug">
-        <Link href={`/research-log/${entry.slug}`} className="hover:text-uf-blue hover:underline">
+        <Link href={`/research-log/${entry.slug}`} className="hover:text-[var(--accent)] hover:underline">
           {entry.title}
         </Link>
       </h3>

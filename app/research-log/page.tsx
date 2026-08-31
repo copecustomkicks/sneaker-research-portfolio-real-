@@ -3,7 +3,7 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 import { PageHeader } from '@/components/PageHeader';
 import { Section, SpecRail } from '@/components/Section';
-import { Callout, EmptyState } from '@/components/Callout';
+import { EmptyState } from '@/components/Callout';
 import { Badge, StatusBadge } from '@/components/Badge';
 import { LogExplorer } from '@/components/LogExplorer';
 import { getLogSummaries, getLatestEntry, getTagCounts } from '@/lib/log';
@@ -30,7 +30,7 @@ export default function ResearchLogPage() {
   const tags = tagCounts.map((tag) => tag.tag);
 
   return (
-    <div className="shell pb-20">
+    <div className="shell sec-project pb-20">
       <PageHeader
         eyebrow="Research log"
         title="Weekly research entries"
@@ -62,7 +62,7 @@ export default function ResearchLogPage() {
               {latest.starter && <Badge variant="outline">Starter content</Badge>}
             </div>
             <h2 className="text-2xl leading-snug">
-              <Link href={`/research-log/${latest.slug}`} className="hover:text-uf-blue hover:underline">
+              <Link href={`/research-log/${latest.slug}`} className="hover:text-[var(--accent)] hover:underline">
                 {latest.title}
               </Link>
             </h2>
@@ -71,7 +71,7 @@ export default function ResearchLogPage() {
             </p>
             <Link
               href={`/research-log/${latest.slug}`}
-              className="mt-5 inline-block text-[0.9375rem] font-medium text-uf-blue hover:underline"
+              className="mt-5 inline-block text-[0.9375rem] font-medium text-[var(--accent)] hover:underline"
             >
               Read the full entry for week {latest.week}
             </Link>
@@ -85,11 +85,7 @@ export default function ResearchLogPage() {
         description="Filters are stored in the page address, so a filtered view can be copied and shared."
       >
         {entries.length === 0 ? (
-          <EmptyState title="No research-log entries yet">
-            Entries are Markdown files in <code className="font-mono text-[0.875rem]">content/research-log/</code>.
-            Copy <code className="font-mono text-[0.875rem]">_template.md</code>, rename it, fill in the
-            frontmatter, and it will appear here on the next deploy.
-          </EmptyState>
+          <EmptyState title="No research-log entries yet">{null}</EmptyState>
         ) : (
           <Suspense
             fallback={
@@ -150,12 +146,6 @@ export default function ResearchLogPage() {
               </ul>
             </div>
           )}
-
-          <Callout tone="note" title="How entries are added" className="mt-8">
-            Each entry is a single Markdown file. Adding one requires no code changes — the site reads the
-            folder at build time and rebuilds itself when the change is pushed. The full workflow is in the
-            repository README.
-          </Callout>
         </Section>
       )}
     </div>

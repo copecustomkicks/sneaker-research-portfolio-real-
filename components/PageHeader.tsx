@@ -11,7 +11,7 @@ export function Breadcrumbs({ items }: { items: Crumb[] }) {
     <nav aria-label="Breadcrumb" className="mb-6">
       <ol className="flex flex-wrap items-center gap-x-2 gap-y-1 font-mono text-micro uppercase text-ink-muted">
         <li>
-          <Link href="/" className="hover:text-uf-blue hover:underline">
+          <Link href="/" className="hover:text-[var(--accent)] hover:underline">
             Home
           </Link>
         </li>
@@ -23,7 +23,7 @@ export function Breadcrumbs({ items }: { items: Crumb[] }) {
                 /
               </span>
               {item.href && !isLast ? (
-                <Link href={item.href} className="hover:text-uf-blue hover:underline">
+                <Link href={item.href} className="hover:text-[var(--accent)] hover:underline">
                   {item.label}
                 </Link>
               ) : (
@@ -56,9 +56,9 @@ export function PageHeader({
   notice?: string;
 }) {
   return (
-    <header className="border-b border-rule pb-10 pt-8 sm:pt-12">
+    <header className="border-b border-[var(--accent)] pb-10 pt-8 sm:pt-12">
       <Breadcrumbs items={crumbs} />
-      <p className="eyebrow mb-3">{eyebrow}</p>
+      <p className="eyebrow mb-3 text-[var(--accent)]">{eyebrow}</p>
       <h1 className="max-w-4xl text-3xl leading-[1.12] sm:text-4xl lg:text-[2.75rem]">{title}</h1>
       {lede && <p className="mt-5 max-w-prose text-lg leading-relaxed text-ink-muted">{lede}</p>}
       {meta && <div className="mt-7">{meta}</div>}

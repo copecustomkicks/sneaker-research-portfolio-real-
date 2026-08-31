@@ -240,7 +240,7 @@ export function DecisionRecord({ decision }: { decision: DesignDecision }) {
           <ul className="space-y-1.5 text-[0.9375rem]">
             {decision.relatedLogSlugs.map((slug) => (
               <li key={slug}>
-                <Link href={`/research-log/${slug}`} className="text-uf-blue hover:underline">
+                <Link href={`/research-log/${slug}`} className="text-[var(--accent)] hover:underline">
                   {slug}
                 </Link>
               </li>
@@ -273,7 +273,7 @@ export function RevisionHistory({ decisions }: { decisions: DesignDecision[] }) 
             {formatDate(decision.date, 'numeric')}
           </span>
           <span className="min-w-0">
-            <a href={`#${decision.id}`} className="text-[0.9375rem] font-medium text-ink hover:text-uf-blue hover:underline">
+            <a href={`#${decision.id}`} className="text-[0.9375rem] font-medium text-ink hover:text-[var(--accent)] hover:underline">
               {decision.title}
             </a>
             <span className="mt-1 block text-[0.875rem] leading-snug text-ink-muted">
@@ -400,7 +400,7 @@ export function OpenQuestionList({ questions }: { questions: string[] }) {
     <ol className="grid gap-4 sm:grid-cols-2">
       {questions.map((question, index) => (
         <li key={index} className="card flex gap-4 p-5">
-          <span className="font-mono text-micro text-uf-blue">
+          <span className="font-mono text-micro text-[var(--accent)]">
             {String(index + 1).padStart(2, '0')}
           </span>
           <span className="text-[0.9375rem] leading-relaxed text-ink">{question}</span>

@@ -17,7 +17,7 @@ export default function DeliverablesPage() {
   const drafting = deliverables.filter((item) => item.status === 'drafting').length;
 
   return (
-    <div className="shell pb-20">
+    <div className="shell sec-about pb-20">
       <PageHeader
         eyebrow="Final deliverables"
         title="What this project will produce"
@@ -65,7 +65,7 @@ export default function DeliverablesPage() {
                   <dt>File</dt>
                   <dd>
                     {item.href ? (
-                      <a href={item.href} className="text-uf-blue hover:underline" download>
+                      <a href={item.href} className="text-[var(--accent)] hover:underline" download>
                         Download
                       </a>
                     ) : (

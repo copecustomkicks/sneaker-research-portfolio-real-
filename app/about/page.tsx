@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   return (
-    <div className="shell pb-20">
+    <div className="shell sec-about pb-20">
       <PageHeader
         eyebrow="About the researcher"
         title={site.researcher}
@@ -79,14 +79,14 @@ export default function AboutPage() {
                 <p className="eyebrow mb-3">Contact</p>
                 <ul className="space-y-3 text-[0.9375rem]">
                   <li>
-                    <a href={`mailto:${site.email}`} className="text-uf-blue hover:underline">Email {site.researcher.split(' ')[0]}</a>
+                    <a href={`mailto:${site.email}`} className="text-[var(--accent)] hover:underline">Email {site.researcher.split(' ')[0]}</a>
                     <span className="mt-0.5 block text-[0.875rem] text-ink-muted">{site.email}</span>
                   </li>
                   <li className="border-t border-rule pt-3">
-                    <a href={site.linkedin} className="text-uf-blue hover:underline" rel="noreferrer noopener" target="_blank">LinkedIn profile</a>
+                    <a href={site.linkedin} className="text-[var(--accent)] hover:underline" rel="noreferrer noopener" target="_blank">LinkedIn profile</a>
                   </li>
                   <li className="border-t border-rule pt-3">
-                    <a href={site.resume} download className="text-uf-blue hover:underline">Download résumé (PDF)</a>
+                    <a href={site.resume} download className="text-[var(--accent)] hover:underline">Download résumé (PDF)</a>
                   </li>
                 </ul>
               </div>
@@ -147,7 +147,7 @@ export default function AboutPage() {
           <p className="mt-3">
             Where a claim on this site comes from a source, that source is cited. Where it comes from
             my own observation or assumption, it is labeled as such. The{' '}
-            <Link href="/integrity" className="text-uf-blue underline">
+            <Link href="/integrity" className="text-[var(--accent)] underline">
               research integrity page
             </Link>{' '}
             explains the labeling system in full.
