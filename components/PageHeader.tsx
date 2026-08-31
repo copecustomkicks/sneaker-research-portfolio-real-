@@ -52,17 +52,17 @@ export function PageHeader({ eyebrow, title, lede, meta, notice, layout = 'stack
   if (layout === 'split') {
     return (
       <header className="border-b border-[var(--accent)] pt-8 pb-10 sm:pt-12">
-        <div className="grid gap-8 lg:grid-cols-[1fr_15rem] lg:items-start lg:gap-12">
+        <div className="grid gap-8 lg:grid-cols-[1fr_15rem] lg:items-center lg:gap-12">
           <div>
             {eyebrowEl}
             {titleEl}
             {ledeEl}
+            {noticeEl}
           </div>
           {meta && (
             <div className="rounded-card border border-[var(--accent)] p-5">{meta}</div>
           )}
         </div>
-        {noticeEl}
       </header>
     );
   }
