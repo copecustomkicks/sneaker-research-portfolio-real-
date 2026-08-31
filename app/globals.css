@@ -5,6 +5,22 @@
 @layer base {
   :root {
     color-scheme: light;
+    /* Default accent for content outside any themed section (home, 404). */
+    --accent: theme('colors.uf.blue');
+  }
+
+  /* Per-section accent, scoped to each page's root element. See lib/sections.ts. */
+  .sec-project {
+    --accent: theme('colors.section.project');
+  }
+  .sec-research {
+    --accent: theme('colors.section.research');
+  }
+  .sec-build {
+    --accent: theme('colors.section.build');
+  }
+  .sec-about {
+    --accent: theme('colors.section.about');
   }
 
   html {

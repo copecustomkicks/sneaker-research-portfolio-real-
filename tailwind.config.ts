@@ -1,12 +1,15 @@
 import type { Config } from 'tailwindcss';
 import typography from '@tailwindcss/typography';
+import { sectionThemes } from './lib/sections';
 
 /**
  * Palette notes
  * -------------
  * The site reads as a technical case study, not a school-spirit page.
- * UF blue is the single structural accent; UF orange appears only on
- * small status marks and never as a large fill.
+ * UF blue remains the sitewide chrome color (buttons, focus ring, footer).
+ * UF orange appears only on small status marks and never as a large fill.
+ * The `section` colors below are the per-nav-group accents defined in
+ * lib/sections.ts — edit them there, not here.
  */
 const config: Config = {
   content: [
@@ -45,6 +48,12 @@ const config: Config = {
           rubber: '#2C2E33',
           leather: '#9C8468',
           textile: '#7E8B93',
+        },
+        section: {
+          project: sectionThemes.project.accent,
+          research: sectionThemes.research.accent,
+          build: sectionThemes.build.accent,
+          about: sectionThemes.about.accent,
         },
       },
       fontFamily: {

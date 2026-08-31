@@ -25,7 +25,7 @@ export default function PrototypesPage() {
   const fabricationPhase = getPhaseById('phase-08');
 
   return (
-    <div className="shell pb-20">
+    <div className="shell sec-build pb-20">
       <PageHeader
         eyebrow="Prototype development"
         title="Builds, experiments, and what went wrong"

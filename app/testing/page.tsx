@@ -32,7 +32,7 @@ export default function TestingPage() {
   const completed = tests.filter((test) => test.status === 'complete').length;
 
   return (
-    <div className="shell pb-20">
+    <div className="shell sec-build pb-20">
       <PageHeader
         eyebrow="Testing and results"
         title="What gets measured, how, and how much to trust it"
@@ -192,7 +192,7 @@ function TestRecordCard({ test }: { test: TestRecord }) {
         )}
         {test.dataFile && (
           <p className="mt-3 text-[0.9375rem]">
-            <a href={test.dataFile} download className="text-uf-blue hover:underline">
+            <a href={test.dataFile} download className="text-[var(--accent)] hover:underline">
               Download the raw data as CSV
             </a>
           </p>
@@ -230,7 +230,7 @@ function TestRecordCard({ test }: { test: TestRecord }) {
         <p className="mt-7 border-t border-rule pt-5 text-[0.9375rem]">
           <span className="eyebrow mr-3">Related log</span>
           {test.relatedLogSlugs.map((slug) => (
-            <Link key={slug} href={`/research-log/${slug}`} className="mr-3 text-uf-blue hover:underline">
+            <Link key={slug} href={`/research-log/${slug}`} className="mr-3 text-[var(--accent)] hover:underline">
               {slug}
             </Link>
           ))}
@@ -241,7 +241,7 @@ function TestRecordCard({ test }: { test: TestRecord }) {
         <p className="mt-3 text-[0.9375rem]">
           <span className="eyebrow mr-3">Related build</span>
           {test.relatedPrototypeIds.map((id) => (
-            <Link key={id} href={`/prototypes#${id}`} className="mr-3 text-uf-blue hover:underline">
+            <Link key={id} href={`/prototypes#${id}`} className="mr-3 text-[var(--accent)] hover:underline">
               {id}
             </Link>
           ))}

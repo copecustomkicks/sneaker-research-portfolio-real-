@@ -18,7 +18,7 @@ export default function ProcessesPage() {
   const supervised = processes.filter((process) => process.requiresSupervision).length;
 
   return (
-    <div className="shell pb-20">
+    <div className="shell sec-research pb-20">
       <PageHeader
         eyebrow="Manufacturing processes"
         title="How a sneaker is actually put together"
@@ -64,7 +64,7 @@ export default function ProcessesPage() {
             <li key={stage.id}>
               <a
                 href={`#stage-${stage.id}`}
-                className="text-[0.9375rem] text-ink-muted hover:text-uf-blue hover:underline"
+                className="text-[0.9375rem] text-ink-muted hover:text-[var(--accent)] hover:underline"
               >
                 {stage.label}
               </a>
@@ -160,7 +160,7 @@ export default function ProcessesPage() {
                       <ul className="space-y-1.5 text-[0.9375rem]">
                         {process.sourceIds.map((id) => (
                           <li key={id}>
-                            <Link href={`/sources#${id}`} className="text-uf-blue hover:underline">
+                            <Link href={`/sources#${id}`} className="text-[var(--accent)] hover:underline">
                               {id}
                             </Link>
                           </li>

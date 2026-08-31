@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 
 export default function IntegrityPage() {
   return (
-    <div className="shell pb-20">
+    <div className="shell sec-about pb-20">
       <PageHeader
         eyebrow="Research integrity"
         title="How to read what is on this site"
@@ -75,7 +75,7 @@ export default function IntegrityPage() {
             'Unresolved questions stay written down as questions. Corrections happen in place, and the Git history preserves the original.',
           ].map((rule, index) => (
             <li key={index} className="flex gap-5 border-t border-rule py-4 last:border-b">
-              <span className="font-mono text-micro text-uf-blue">
+              <span className="font-mono text-micro text-[var(--accent)]">
                 {String(index + 1).padStart(2, '0')}
               </span>
               <span className="max-w-prose text-[0.9375rem] leading-relaxed text-ink">{rule}</span>
@@ -90,7 +90,7 @@ export default function IntegrityPage() {
           <p className="mt-3">
             Every page is versioned in a public Git repository, so the history of what changed and
             when is inspectable. The{' '}
-            <Link href="/research-log" className="text-uf-blue underline">
+            <Link href="/research-log" className="text-[var(--accent)] underline">
               research log
             </Link>{' '}
             is the chronological record; the reference pages hold the current state of understanding.

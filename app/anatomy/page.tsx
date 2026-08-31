@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 
 export default function AnatomyPage() {
   return (
-    <div className="shell pb-20">
+    <div className="shell sec-research pb-20">
       <PageHeader
         eyebrow="Reference"
         title="Sneaker anatomy"
@@ -27,11 +27,11 @@ export default function AnatomyPage() {
       <div className="pt-8">
         <Callout tone="integrity" title="No uncited numbers on this page">
           These entries are deliberately qualitative. Quantitative properties belong in a{' '}
-          <Link href="/materials" className="text-uf-blue underline">
+          <Link href="/materials" className="text-[var(--accent)] underline">
             material record
           </Link>{' '}
           with a citation, or in a{' '}
-          <Link href="/testing" className="text-uf-blue underline">
+          <Link href="/testing" className="text-[var(--accent)] underline">
             test record
           </Link>{' '}
           with data behind it — not in a general reference where the source would be lost.
@@ -45,7 +45,7 @@ export default function AnatomyPage() {
             <li key={group.id}>
               <a
                 href={`#group-${group.id}`}
-                className="text-[0.9375rem] text-ink-muted hover:text-uf-blue hover:underline"
+                className="text-[0.9375rem] text-ink-muted hover:text-[var(--accent)] hover:underline"
               >
                 {group.label}
               </a>
@@ -100,7 +100,7 @@ export default function AnatomyPage() {
                             return (
                               <li key={id}>
                                 {source ? (
-                                  <Link href={`/sources#${source.id}`} className="text-uf-blue hover:underline">
+                                  <Link href={`/sources#${source.id}`} className="text-[var(--accent)] hover:underline">
                                     {source.citation}
                                   </Link>
                                 ) : (

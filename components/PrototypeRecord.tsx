@@ -116,7 +116,7 @@ export function PrototypeRecord({ prototype }: { prototype: Prototype }) {
               prototype.relatedLogSlugs && prototype.relatedLogSlugs.length > 0 ? (
                 <span className="flex flex-wrap gap-x-3 gap-y-1">
                   {prototype.relatedLogSlugs.map((slug) => (
-                    <Link key={slug} href={`/research-log/${slug}`} className="text-uf-blue hover:underline">
+                    <Link key={slug} href={`/research-log/${slug}`} className="text-[var(--accent)] hover:underline">
                       {slug}
                     </Link>
                   ))}

@@ -20,7 +20,7 @@ export default function GalleryPage() {
   const typesPresent = Array.from(new Set(artifacts.map((artifact) => artifact.type)));
 
   return (
-    <div className="shell pb-20">
+    <div className="shell sec-build pb-20">
       <PageHeader
         eyebrow="Gallery"
         title="Artifacts from the process"
@@ -116,7 +116,7 @@ function ArtifactTile({ artifact }: { artifact: Artifact }) {
             <div className="border-t border-rule pt-2.5">
               <dt>Phase</dt>
               <dd>
-                <Link href={`/roadmap#${phase.id}`} className="text-uf-blue hover:underline">
+                <Link href={`/roadmap#${phase.id}`} className="text-[var(--accent)] hover:underline">
                   Phase {phase.number} — {phase.name}
                 </Link>
               </dd>
@@ -128,7 +128,7 @@ function ArtifactTile({ artifact }: { artifact: Artifact }) {
               <dd>
                 <Link
                   href={`/research-log/${artifact.relatedLogSlug}`}
-                  className="text-uf-blue hover:underline"
+                  className="text-[var(--accent)] hover:underline"
                 >
                   Read the entry
                 </Link>
@@ -139,7 +139,7 @@ function ArtifactTile({ artifact }: { artifact: Artifact }) {
             <div className="border-t border-rule pt-2.5">
               <dt>File</dt>
               <dd>
-                <a href={artifact.downloadHref} download className="text-uf-blue hover:underline">
+                <a href={artifact.downloadHref} download className="text-[var(--accent)] hover:underline">
                   Download {artifact.title}
                 </a>
               </dd>

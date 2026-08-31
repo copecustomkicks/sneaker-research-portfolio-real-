@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 
 export default function OverviewPage() {
   return (
-    <div className="shell pb-20">
+    <div className="shell sec-project pb-20">
       <PageHeader
         eyebrow="Project overview"
         title="What this project is trying to answer, and how"
@@ -65,7 +65,7 @@ export default function OverviewPage() {
             <li key={section.id}>
               <a
                 href={`#${section.id}`}
-                className="text-[0.9375rem] text-ink-muted hover:text-uf-blue hover:underline"
+                className="text-[0.9375rem] text-ink-muted hover:text-[var(--accent)] hover:underline"
               >
                 {section.heading}
               </a>
@@ -115,7 +115,7 @@ export default function OverviewPage() {
         <ol className="divide-y divide-rule overflow-hidden rounded-card border border-rule bg-paper-raised">
           {phases.map((phase) => (
             <li key={phase.id} className="flex flex-wrap items-baseline gap-x-5 gap-y-1 px-5 py-4">
-              <span className="font-mono text-micro text-uf-blue">
+              <span className="font-mono text-micro text-[var(--accent)]">
                 P{String(phase.number).padStart(2, '0')}
               </span>
               <span className="text-[0.9375rem] font-medium text-ink">{phase.name}</span>
@@ -128,7 +128,7 @@ export default function OverviewPage() {
         <Callout tone="provisional" title="Provisional schedule" className="mt-6">
           Phase dates are planning estimates maintained in{' '}
           <code className="font-mono text-[0.875rem]">data/phases.ts</code>. See the{' '}
-          <Link href="/roadmap" className="text-uf-blue underline">
+          <Link href="/roadmap" className="text-[var(--accent)] underline">
             full roadmap
           </Link>{' '}
           for objectives, expected outputs, and current status per phase.

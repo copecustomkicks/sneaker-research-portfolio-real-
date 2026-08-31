@@ -39,7 +39,7 @@ export default function DesignPage() {
   const constraints = requirements.filter((requirement) => requirement.type === 'constraint');
 
   return (
-    <div className="shell pb-20">
+    <div className="shell sec-build pb-20">
       <PageHeader
         eyebrow="Design process"
         title="Requirements, decisions, and the reasoning behind them"
@@ -78,7 +78,7 @@ export default function DesignPage() {
             ['questions', 'Open questions'],
           ].map(([id, label]) => (
             <li key={id}>
-              <a href={`#${id}`} className="text-[0.9375rem] text-ink-muted hover:text-uf-blue hover:underline">
+              <a href={`#${id}`} className="text-[0.9375rem] text-ink-muted hover:text-[var(--accent)] hover:underline">
                 {label}
               </a>
             </li>
@@ -155,7 +155,7 @@ export default function DesignPage() {
       >
         <EmptyState title="No concept sketches published yet">
           Sketches will appear in the{' '}
-          <Link href="/gallery" className="text-uf-blue underline">
+          <Link href="/gallery" className="text-[var(--accent)] underline">
             gallery
           </Link>{' '}
           with captions explaining what each concept was testing. Add them as artifacts in{' '}
@@ -207,7 +207,7 @@ export default function DesignPage() {
               {item.component}
             </span>,
             item.materialId ? (
-              <Link key="material" href={`/materials/${item.materialId}`} className="text-uf-blue hover:underline">
+              <Link key="material" href={`/materials/${item.materialId}`} className="text-[var(--accent)] hover:underline">
                 {item.materialName}
               </Link>
             ) : (

@@ -20,7 +20,7 @@ export default function SourcesPage() {
   const typesInUse = Array.from(new Set(sources.map((source) => source.type)));
 
   return (
-    <div className="shell pb-20">
+    <div className="shell sec-research pb-20">
       <PageHeader
         eyebrow="Research library"
         title="Sources and literature"
@@ -83,7 +83,7 @@ export default function SourcesPage() {
         </ul>
         <p className="mt-6 text-[0.9375rem] text-ink-muted">
           The full vocabulary is on the{' '}
-          <a href="/integrity" className="text-uf-blue hover:underline">
+          <a href="/integrity" className="text-[var(--accent)] hover:underline">
             research integrity page
           </a>
           .

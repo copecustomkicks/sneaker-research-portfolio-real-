@@ -5,6 +5,13 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { navigation, site } from '@/lib/site';
 import { cn } from '@/lib/utils';
+import { getSectionForPath, sectionThemes } from '@/lib/sections';
+
+/** Accent color for a nav item, based on which section its href belongs to. */
+function accentForHref(href: string): string {
+  const section = getSectionForPath(href);
+  return section ? sectionThemes[section].accent : sectionThemes.project.accent;
+}
 
 /** Shown inline on wide screens. The full set lives in the panel. */
 const primaryLinks = [
@@ -71,9 +78,10 @@ export function SiteHeader() {
                     className={cn(
                       'rounded-[3px] px-3 py-2 text-[0.875rem] font-medium transition-colors',
                       isActive(link.href)
-                        ? 'text-uf-blue underline decoration-2 underline-offset-[6px]'
+                        ? 'underline decoration-2 underline-offset-[6px]'
                         : 'text-ink-muted hover:bg-paper-sunken hover:text-ink'
                     )}
+                    style={isActive(link.href) ? { color: accentForHref(link.href) } : undefined}
                   >
                     {link.label}
                   </Link>
@@ -118,11 +126,12 @@ export function SiteHeader() {
                           href={item.href}
                           aria-current={isActive(item.href) ? 'page' : undefined}
                           className="group block"
+                          style={{ '--item-accent': accentForHref(item.href) } as React.CSSProperties}
                         >
                           <span
                             className={cn(
-                              'block text-[0.9375rem] font-medium group-hover:text-uf-blue group-hover:underline',
-                              isActive(item.href) ? 'text-uf-blue' : 'text-ink'
+                              'block text-[0.9375rem] font-medium group-hover:text-[var(--item-accent)] group-hover:underline',
+                              isActive(item.href) ? 'text-[var(--item-accent)]' : 'text-ink'
                             )}
                           >
                             {item.label}

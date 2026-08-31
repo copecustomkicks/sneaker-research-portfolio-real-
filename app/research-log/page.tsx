@@ -30,7 +30,7 @@ export default function ResearchLogPage() {
   const tags = tagCounts.map((tag) => tag.tag);
 
   return (
-    <div className="shell pb-20">
+    <div className="shell sec-project pb-20">
       <PageHeader
         eyebrow="Research log"
         title="Weekly research entries"
@@ -62,7 +62,7 @@ export default function ResearchLogPage() {
               {latest.starter && <Badge variant="outline">Starter content</Badge>}
             </div>
             <h2 className="text-2xl leading-snug">
-              <Link href={`/research-log/${latest.slug}`} className="hover:text-uf-blue hover:underline">
+              <Link href={`/research-log/${latest.slug}`} className="hover:text-[var(--accent)] hover:underline">
                 {latest.title}
               </Link>
             </h2>
@@ -71,7 +71,7 @@ export default function ResearchLogPage() {
             </p>
             <Link
               href={`/research-log/${latest.slug}`}
-              className="mt-5 inline-block text-[0.9375rem] font-medium text-uf-blue hover:underline"
+              className="mt-5 inline-block text-[0.9375rem] font-medium text-[var(--accent)] hover:underline"
             >
               Read the full entry for week {latest.week}
             </Link>

@@ -194,7 +194,7 @@ function SourceCard({ source }: { source: Source }) {
             {source.doi ? (
               <a
                 href={`https://doi.org/${source.doi}`}
-                className="text-uf-blue hover:underline"
+                className="text-[var(--accent)] hover:underline"
                 rel="noreferrer noopener"
                 target="_blank"
               >
@@ -203,7 +203,7 @@ function SourceCard({ source }: { source: Source }) {
             ) : source.url ? (
               <a
                 href={source.url}
-                className="text-uf-blue hover:underline"
+                className="text-[var(--accent)] hover:underline"
                 rel="noreferrer noopener"
                 target="_blank"
               >
@@ -248,7 +248,7 @@ function SourceCard({ source }: { source: Source }) {
           <ul className="space-y-1.5 text-[0.9375rem]">
             {source.relatedLogSlugs.map((slug) => (
               <li key={slug}>
-                <Link href={`/research-log/${slug}`} className="text-uf-blue hover:underline">
+                <Link href={`/research-log/${slug}`} className="text-[var(--accent)] hover:underline">
                   {slug}
                 </Link>
               </li>
