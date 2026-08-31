@@ -56,11 +56,6 @@ export default function SourcesPage() {
 
         <Callout tone="note" title="Citation style">
           <p>{citationStyleNote}</p>
-          <p className="mt-3">
-            Reference patterns for each source type are documented at the top of{' '}
-            <code className="font-mono text-[0.875rem]">data/sources.ts</code>, so the format does not
-            have to be looked up each time a source is added.
-          </p>
         </Callout>
       </div>
 

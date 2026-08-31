@@ -51,8 +51,7 @@ export default function MaterialsPage() {
         <Callout tone="provisional" title="These are structural examples">
           The records below show the shape and depth a complete material record should have. Property
           values read &ldquo;to be recorded&rdquo; rather than being filled with plausible numbers.
-          Nothing here is a finding. Records live in{' '}
-          <code className="font-mono text-[0.875rem]">data/materials.ts</code>.
+          Nothing here is a finding.
         </Callout>
       </div>
 
@@ -62,10 +61,7 @@ export default function MaterialsPage() {
         description="Filters are stored in the page address, so a filtered comparison can be shared."
       >
         {materials.length === 0 ? (
-          <EmptyState title="No material records yet">
-            Add records to <code className="font-mono text-[0.875rem]">data/materials.ts</code> and they
-            will appear here.
-          </EmptyState>
+          <EmptyState title="No material records yet">{null}</EmptyState>
         ) : (
           <Suspense
             fallback={<p className="font-mono text-micro uppercase text-ink-muted">Loading filters…</p>}

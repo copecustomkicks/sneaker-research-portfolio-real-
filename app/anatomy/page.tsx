@@ -111,10 +111,7 @@ export default function AnatomyPage() {
                           })}
                         </ul>
                       ) : (
-                        <p className="text-[0.9375rem] text-ink-muted">
-                          None recorded yet. Sources are added in{' '}
-                          <code className="font-mono text-[0.875rem]">data/sources.ts</code>.
-                        </p>
+                        <p className="text-[0.9375rem] text-ink-muted">None recorded yet.</p>
                       )}
                     </div>
                     <div>

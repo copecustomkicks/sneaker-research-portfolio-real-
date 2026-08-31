@@ -163,9 +163,7 @@ export default function IntegrityPage() {
 
           <p className="mt-7 max-w-prose border-t border-rule pt-6 text-[0.9375rem] leading-relaxed text-ink-muted">
             Responsibility for every technical claim, source, calculation, and conclusion on this site
-            rests with the researcher. If your program requires a specific disclosure format, edit{' '}
-            <code className="font-mono text-[0.875rem]">aiDisclosure</code> in{' '}
-            <code className="font-mono text-[0.875rem]">data/project.ts</code>.
+            rests with the researcher.
           </p>
         </div>
       </Section>

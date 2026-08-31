@@ -158,8 +158,7 @@ export default function DesignPage() {
           <Link href="/gallery" className="text-[var(--accent)] underline">
             gallery
           </Link>{' '}
-          with captions explaining what each concept was testing. Add them as artifacts in{' '}
-          <code className="font-mono text-[0.875rem]">data/artifacts.ts</code>.
+          with captions explaining what each concept was testing.
         </EmptyState>
       </Section>
 

@@ -64,9 +64,7 @@ export default function GalleryPage() {
             }
           >
             The gallery fills up as work happens: benchmark teardowns in Phase 2, material samples in
-            Phase 3, sketches and CAD in Phases 5 and 7, then build and test photographs. Add records
-            to <code className="font-mono text-[0.875rem]">data/artifacts.ts</code> and put the files
-            in <code className="font-mono text-[0.875rem]">public/images/</code>.
+            Phase 3, sketches and CAD in Phases 5 and 7, then build and test photographs.
           </EmptyState>
         ) : (
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">

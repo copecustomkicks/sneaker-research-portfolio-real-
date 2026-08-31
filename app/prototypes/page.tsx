@@ -77,9 +77,7 @@ export default function PrototypesPage() {
               </Link>
             }
           >
-            Experiments are added to <code className="font-mono text-[0.875rem]">data/prototypes.ts</code>{' '}
-            with <code className="font-mono text-[0.875rem]">kind: &lsquo;component-experiment&rsquo;</code>. The
-            file contains a filled-in example to copy.
+            {null}
           </EmptyState>
         ) : (
           <div className="space-y-6">

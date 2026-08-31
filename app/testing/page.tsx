@@ -78,9 +78,7 @@ export default function TestingPage() {
             }
           >
             Testing starts in Phase 9, once something exists to test. Component experiments in Phase 8
-            will produce the first measurements. Records are added to{' '}
-            <code className="font-mono text-[0.875rem]">data/tests.ts</code>, which contains a
-            filled-in example to copy.
+            will produce the first measurements.
           </EmptyState>
         ) : (
           <div className="space-y-6">
