@@ -31,6 +31,7 @@ export default function PrototypesPage() {
         title="Builds, experiments, and what went wrong"
         lede="Every build recorded the same way — including what failed."
         crumbs={[{ label: 'Prototypes' }]}
+        layout="banner"
         meta={
           <SpecRail
             columns={4}

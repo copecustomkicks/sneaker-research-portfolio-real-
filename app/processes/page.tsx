@@ -24,9 +24,10 @@ export default function ProcessesPage() {
         title="How a sneaker is actually put together"
         lede="Seventeen processes, from last selection through final inspection."
         crumbs={[{ label: 'Processes' }]}
+        layout="split"
         meta={
           <SpecRail
-            columns={4}
+            columns={1}
             items={[
               { label: 'Processes documented', value: <span className="font-mono">{processes.length}</span> },
               { label: 'Requiring supervision', value: <span className="font-mono">{supervised}</span> },

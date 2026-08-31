@@ -48,10 +48,12 @@ export function SpecRail({
   className,
 }: {
   items: { label: string; value: React.ReactNode }[];
-  columns?: 2 | 3 | 4;
+  /** 1 stays single-column regardless of viewport — for narrow sidebar placements. */
+  columns?: 1 | 2 | 3 | 4;
   className?: string;
 }) {
   const gridCols = {
+    1: '',
     2: 'sm:grid-cols-2',
     3: 'sm:grid-cols-2 lg:grid-cols-3',
     4: 'sm:grid-cols-2 lg:grid-cols-4',

@@ -27,6 +27,7 @@ export default function MaterialsPage() {
         title="Candidate materials, by component"
         lede="Each record holds properties, advantages, limitations, manufacturing compatibility, and a selection status. Property values stay blank until a data sheet, a paper, or a measurement fills them in."
         crumbs={[{ label: 'Materials' }]}
+        layout="banner"
         meta={
           <SpecRail
             columns={4}

@@ -29,9 +29,10 @@ export default function RoadmapPage() {
         title="Eleven phases from background research to oral defense"
         lede="Objectives and outputs defined up front. Status updated as work happens."
         crumbs={[{ label: 'Roadmap' }]}
+        layout="split"
         meta={
           <SpecRail
-            columns={4}
+            columns={1}
             items={[
               { label: 'Phases', value: <span className="font-mono">{phases.length}</span> },
               {

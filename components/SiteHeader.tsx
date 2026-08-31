@@ -119,26 +119,19 @@ export function SiteHeader() {
               {navigation.map((group) => (
                 <li key={group.label}>
                   <p className="eyebrow mb-3 border-b border-rule pb-2">{group.label}</p>
-                  <ul className="space-y-3">
+                  <ul className="space-y-2">
                     {group.items.map((item) => (
                       <li key={item.href}>
                         <Link
                           href={item.href}
                           aria-current={isActive(item.href) ? 'page' : undefined}
-                          className="group block"
-                          style={{ '--item-accent': accentForHref(item.href) } as React.CSSProperties}
+                          className={cn(
+                            'block text-[0.9375rem] font-medium hover:underline',
+                            isActive(item.href) ? 'underline' : 'text-ink hover:text-[var(--item-accent)]'
+                          )}
+                          style={{ color: isActive(item.href) ? accentForHref(item.href) : undefined, '--item-accent': accentForHref(item.href) } as React.CSSProperties}
                         >
-                          <span
-                            className={cn(
-                              'block text-[0.9375rem] font-medium group-hover:text-[var(--item-accent)] group-hover:underline',
-                              isActive(item.href) ? 'text-[var(--item-accent)]' : 'text-ink'
-                            )}
-                          >
-                            {item.label}
-                          </span>
-                          <span className="mt-0.5 block text-[0.8125rem] leading-snug text-ink-muted">
-                            {item.description}
-                          </span>
+                          {item.label}
                         </Link>
                       </li>
                     ))}

@@ -23,6 +23,7 @@ export default function DeliverablesPage() {
         title="What this project will produce"
         lede="What this project will produce. Nothing is marked available until it exists."
         crumbs={[{ label: 'Deliverables' }]}
+        layout="banner"
         meta={
           <SpecRail
             columns={3}

@@ -45,10 +45,11 @@ export default function DesignPage() {
         title="Requirements, decisions, and the reasoning behind them"
         lede="What the shoe has to do, what limits the design, and how choices get made."
         crumbs={[{ label: 'Design process' }]}
+        layout="split"
         notice={scopeDisclaimer}
         meta={
           <SpecRail
-            columns={4}
+            columns={1}
             items={[
               { label: 'Needs and requirements', value: <span className="font-mono">{requirements.length}</span> },
               { label: 'Decision matrices', value: <span className="font-mono">{decisionMatrices.length}</span> },

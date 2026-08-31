@@ -26,9 +26,10 @@ export default function GalleryPage() {
         title="Artifacts from the process"
         lede="Photographs, sketches, diagrams, and documents from the process."
         crumbs={[{ label: 'Gallery' }]}
+        layout="split"
         meta={
           <SpecRail
-            columns={3}
+            columns={1}
             items={[
               { label: 'Artifacts published', value: <span className="font-mono">{artifacts.length}</span> },
               { label: 'Types represented', value: <span className="font-mono">{typesPresent.length}</span> },
