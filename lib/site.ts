@@ -70,7 +70,7 @@ export const navigation: NavGroup[] = [
     items: [
       { label: 'Researcher', href: '/about', description: 'Background and contact' },
       { label: 'Deliverables', href: '/deliverables', description: 'Thesis, poster, and final outputs' },
-      { label: 'Research integrity', href: '/integrity', description: 'Evidence labels and AI disclosure' },
+      { label: 'Research integrity', href: '/integrity', description: 'Evidence labels and disclosures' },
     ],
   },
 ];

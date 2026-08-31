@@ -15,7 +15,7 @@ import {
 export const metadata: Metadata = {
   title: 'Research integrity',
   description:
-    'How this portfolio distinguishes published evidence, manufacturer claims, researcher observations, assumptions, design decisions, experimental data, interpretations, and open questions — plus the safety statement and AI assistance disclosure.',
+    'How this portfolio distinguishes published evidence, manufacturer claims, researcher observations, assumptions, design decisions, experimental data, interpretations, and open questions — plus the safety statement and process disclosures.',
   alternates: { canonical: '/integrity' },
 };
 

@@ -1,5 +1,14 @@
 import Link from 'next/link';
 import { navigation, site } from '@/lib/site';
+import { sectionThemes } from '@/lib/sections';
+
+/** Footer nav groups mirror the four section accents used across the site. */
+const groupAccent: Record<string, string> = {
+  [sectionThemes.project.label]: sectionThemes.project.accent,
+  [sectionThemes.research.label]: sectionThemes.research.accent,
+  [sectionThemes.build.label]: sectionThemes.build.accent,
+  [sectionThemes.about.label]: sectionThemes.about.accent,
+};
 
 export function SiteFooter() {
   const year = new Date().getFullYear();
@@ -23,23 +32,29 @@ export function SiteFooter() {
 
           <nav aria-label="Footer">
             <ul className="grid gap-x-8 gap-y-7 sm:grid-cols-2 lg:grid-cols-4">
-              {navigation.map((group) => (
-                <li key={group.label}>
-                  <p className="eyebrow mb-3">{group.label}</p>
-                  <ul className="space-y-2">
-                    {group.items.map((item) => (
-                      <li key={item.href}>
-                        <Link
-                          href={item.href}
-                          className="text-[0.875rem] text-ink-muted hover:text-uf-blue hover:underline"
-                        >
-                          {item.label}
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                </li>
-              ))}
+              {navigation.map((group) => {
+                const accent = groupAccent[group.label];
+                return (
+                  <li key={group.label}>
+                    <p className="eyebrow mb-3" style={{ color: accent }}>
+                      {group.label}
+                    </p>
+                    <ul className="space-y-2">
+                      {group.items.map((item) => (
+                        <li key={item.href}>
+                          <Link
+                            href={item.href}
+                            className="text-[0.875rem] text-ink-muted hover:text-[var(--group-accent)] hover:underline"
+                            style={{ '--group-accent': accent } as React.CSSProperties}
+                          >
+                            {item.label}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </li>
+                );
+              })}
             </ul>
           </nav>
         </div>
@@ -50,7 +65,7 @@ export function SiteFooter() {
           </p>
           <p className="font-mono text-micro uppercase text-ink-faint">
             <Link href="/integrity" className="hover:text-uf-blue hover:underline">
-              Research integrity and AI disclosure
+              Research integrity
             </Link>
           </p>
         </div>
