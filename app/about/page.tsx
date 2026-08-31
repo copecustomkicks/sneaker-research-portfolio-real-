@@ -19,7 +19,6 @@ export default function AboutPage() {
         eyebrow="About the researcher"
         title={site.researcher}
         lede={`${site.major} student at the ${site.university}, researching how sneakers are engineered and manufactured through the ${site.program}.`}
-        crumbs={[{ label: 'About' }]}
         meta={
           <SpecRail
             columns={4}

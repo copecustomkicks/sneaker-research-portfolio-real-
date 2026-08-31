@@ -21,7 +21,6 @@ export default function AnatomyPage() {
         eyebrow="Reference"
         title="Sneaker anatomy"
         lede="Nineteen components, what each one does, and the tradeoffs involved."
-        crumbs={[{ label: 'Sneaker anatomy' }]}
       />
 
       <div className="pt-8">

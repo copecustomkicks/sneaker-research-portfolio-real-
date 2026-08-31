@@ -25,7 +25,6 @@ export default function GalleryPage() {
         eyebrow="Gallery"
         title="Artifacts from the process"
         lede="Photographs, sketches, diagrams, and documents from the process."
-        crumbs={[{ label: 'Gallery' }]}
         layout="split"
         meta={
           <SpecRail

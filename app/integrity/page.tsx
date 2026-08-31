@@ -26,7 +26,6 @@ export default function IntegrityPage() {
         eyebrow="Research integrity"
         title="How to read what is on this site"
         lede="The labels used across this site to separate evidence from assumption."
-        crumbs={[{ label: 'Research integrity' }]}
       />
 
       <div className="pt-8">

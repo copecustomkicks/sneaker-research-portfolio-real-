@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
-import { Breadcrumbs } from '@/components/PageHeader';
 import { Section, SpecRail, LabeledList } from '@/components/Section';
 import { Callout } from '@/components/Callout';
 import { Badge, StatusBadge, EvidenceBadge } from '@/components/Badge';
@@ -44,10 +43,6 @@ export default async function MaterialPage({ params }: PageProps) {
   return (
     <div className="shell sec-research pb-20">
       <header className="border-b border-[var(--accent)] pb-9 pt-8 sm:pt-12">
-        <Breadcrumbs
-          items={[{ label: 'Materials', href: '/materials' }, { label: material.name }]}
-        />
-
         <div className="mb-4 flex flex-wrap items-center gap-2">
           <StatusBadge status={material.status} label={materialStatusLabels[material.status]} />
           <Badge variant="neutral">{material.category}</Badge>

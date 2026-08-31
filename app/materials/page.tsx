@@ -26,7 +26,6 @@ export default function MaterialsPage() {
         eyebrow="Materials research"
         title="Candidate materials, by component"
         lede="Each record holds properties, advantages, limitations, manufacturing compatibility, and a selection status. Property values stay blank until a data sheet, a paper, or a measurement fills them in."
-        crumbs={[{ label: 'Materials' }]}
         layout="banner"
         meta={
           <SpecRail
@@ -48,14 +47,6 @@ export default function MaterialsPage() {
         }
       />
 
-      <div className="pt-8">
-        <Callout tone="provisional" title="These are structural examples">
-          The records below show the shape and depth a complete material record should have. Property
-          values read &ldquo;to be recorded&rdquo; rather than being filled with plausible numbers.
-          Nothing here is a finding.
-        </Callout>
-      </div>
-
       <Section
         eyebrow="Library"
         title="Search and compare"
@@ -64,16 +55,17 @@ export default function MaterialsPage() {
         {materials.length === 0 ? (
           <EmptyState title="No material records yet">{null}</EmptyState>
         ) : (
-          <Suspense
-            fallback={<p className="font-mono text-micro uppercase text-ink-muted">Loading filters…</p>}
-          >
-            <MaterialExplorer materials={materials} categories={materialCategories} />
-          </Suspense>
+          <>
+            <Suspense
+              fallback={<p className="font-mono text-micro uppercase text-ink-muted">Loading filters…</p>}
+            >
+              <MaterialExplorer materials={materials} categories={materialCategories} />
+            </Suspense>
+            <Callout tone="integrity" title="On the preliminary scores" className="mt-8">
+              {scoringCaveat}
+            </Callout>
+          </>
         )}
-
-        <Callout tone="integrity" title="On the preliminary scores" className="mt-8">
-          {scoringCaveat}
-        </Callout>
       </Section>
 
       <Section eyebrow="Coverage" title="Categories to populate">

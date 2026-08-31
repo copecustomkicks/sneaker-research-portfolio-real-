@@ -28,7 +28,6 @@ export default function RoadmapPage() {
         eyebrow="Research roadmap"
         title="Eleven phases from background research to oral defense"
         lede="Objectives and outputs defined up front. Status updated as work happens."
-        crumbs={[{ label: 'Roadmap' }]}
         layout="split"
         meta={
           <SpecRail

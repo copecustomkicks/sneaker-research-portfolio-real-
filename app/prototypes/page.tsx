@@ -30,7 +30,6 @@ export default function PrototypesPage() {
         eyebrow="Prototype development"
         title="Builds, experiments, and what went wrong"
         lede="Every build recorded the same way — including what failed."
-        crumbs={[{ label: 'Prototypes' }]}
         layout="banner"
         meta={
           <SpecRail

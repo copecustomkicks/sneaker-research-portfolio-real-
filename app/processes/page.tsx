@@ -23,7 +23,6 @@ export default function ProcessesPage() {
         eyebrow="Manufacturing processes"
         title="How a sneaker is actually put together"
         lede="Seventeen processes, from last selection through final inspection."
-        crumbs={[{ label: 'Processes' }]}
         layout="split"
         meta={
           <SpecRail

@@ -37,7 +37,6 @@ export default function TestingPage() {
         eyebrow="Testing and results"
         title="What gets measured, how, and how much to trust it"
         lede="Test records with their methods, data, and limitations."
-        crumbs={[{ label: 'Testing' }]}
         meta={
           <SpecRail
             columns={4}

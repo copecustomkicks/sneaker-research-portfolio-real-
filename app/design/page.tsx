@@ -44,7 +44,6 @@ export default function DesignPage() {
         eyebrow="Design process"
         title="Requirements, decisions, and the reasoning behind them"
         lede="What the shoe has to do, what limits the design, and how choices get made."
-        crumbs={[{ label: 'Design process' }]}
         layout="split"
         notice={scopeDisclaimer}
         meta={

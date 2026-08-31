@@ -2,7 +2,6 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
-import { Breadcrumbs } from '@/components/PageHeader';
 import { SpecRail } from '@/components/Section';
 import { Callout } from '@/components/Callout';
 import { Badge, StatusBadge } from '@/components/Badge';
@@ -52,14 +51,7 @@ export default async function ResearchLogEntryPage({ params }: PageProps) {
   return (
     <div className="shell sec-project pb-20">
       <article>
-        <header className="border-b border-rule pb-9 pt-8 sm:pt-12">
-          <Breadcrumbs
-            items={[
-              { label: 'Research log', href: '/research-log' },
-              { label: `Week ${String(entry.week).padStart(2, '0')}` },
-            ]}
-          />
-
+        <header className="border-b border-[var(--accent)] pb-9 pt-8 sm:pt-12">
           <div className="mb-4 flex flex-wrap items-center gap-2">
             <Badge variant="blue">Week {String(entry.week).padStart(2, '0')}</Badge>
             <StatusBadge status={entry.status} />

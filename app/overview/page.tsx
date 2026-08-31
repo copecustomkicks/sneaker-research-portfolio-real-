@@ -22,7 +22,6 @@ export default function OverviewPage() {
         eyebrow="Project overview"
         title="What this project is trying to answer, and how"
         lede="The framing below is under active development. Sections still in draft are labeled as preliminary."
-        crumbs={[{ label: 'Overview' }]}
         layout="banner"
         meta={
           <SpecRail

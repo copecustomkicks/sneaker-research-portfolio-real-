@@ -35,7 +35,6 @@ export default function ResearchLogPage() {
         eyebrow="Research log"
         title="Weekly research entries"
         lede="A running record of what was done each week, what it produced, and what it changed. Failures and dead ends are logged alongside progress — they are part of the evidence."
-        crumbs={[{ label: 'Research log' }]}
         meta={
           <SpecRail
             columns={4}

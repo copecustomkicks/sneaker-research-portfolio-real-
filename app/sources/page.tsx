@@ -25,7 +25,6 @@ export default function SourcesPage() {
         eyebrow="Research library"
         title="Sources and literature"
         lede="Every reference used here, with what it says and how far it can be trusted."
-        crumbs={[{ label: 'Sources' }]}
         meta={
           <SpecRail
             columns={4}
