@@ -23,10 +23,12 @@ export function SiteFooter() {
               {site.shortName}
             </p>
             <p className="mt-4 text-[0.9375rem] leading-relaxed text-ink-muted">
-              {site.researcher} &middot; {site.major}, {site.university} &middot; {site.program}
+              <span className="text-uf-blue">{site.researcher}</span> &middot; {site.major},{' '}
+              <span className="text-uf-blue">{site.university}</span> &middot;{' '}
+              <span className="text-uf-blue">{site.program}</span>
             </p>
             <p className="mt-1 text-[0.9375rem] leading-relaxed text-ink-muted">
-              Faculty mentor: {site.mentor}
+              Faculty mentor: <span className="text-uf-blue">{site.mentor}</span>
             </p>
           </div>
 
