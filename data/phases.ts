@@ -42,9 +42,10 @@ export const phases: ResearchPhase[] = [
     id: 'phase-02',
     number: 2,
     name: 'Sneaker Anatomy and Benchmarking',
-    status: 'not-started',
+    status: 'in-progress',
     plannedDates: 'Sep 2026',
-    completion: 0,
+    actualDates: 'Started Sep 2026',
+    completion: 55,
     objectives: [
       'Document every major sneaker component and its function',
       'Disassemble or closely inspect existing footwear to observe construction',

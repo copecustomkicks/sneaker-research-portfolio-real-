@@ -10,7 +10,7 @@ import { getSource } from '@/data/sources';
 export const metadata: Metadata = {
   title: 'Sneaker anatomy',
   description:
-    'A component-by-component reference for sneaker construction: what each part does, what it is typically made from, how it is manufactured, and the design tradeoffs involved.',
+    'A component-by-component reference for sneaker construction: what each part does, how it relates to neighboring components, and which commonly confused terms it should not be mistaken for.',
   alternates: { canonical: '/anatomy' },
 };
 
@@ -20,7 +20,7 @@ export default function AnatomyPage() {
       <PageHeader
         eyebrow="Reference"
         title="Sneaker anatomy"
-        lede="Nineteen components, what each one does, and the tradeoffs involved."
+        lede="Thirty components across the upper, lasting, sole, and joining systems — what each one does and the terms it is easy to confuse it with."
       />
 
       <div className="pt-8">

@@ -148,7 +148,7 @@ export interface AnatomyComponent {
   id: string;
   name: string;
   /** Which assembly group the part belongs to. */
-  group: 'upper' | 'lower' | 'internal' | 'tooling';
+  group: 'upper' | 'lower' | 'internal' | 'joining' | 'tooling';
   function: string;
   commonMaterials: string[];
   relevantProperties: string[];
