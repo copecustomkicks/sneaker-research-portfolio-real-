@@ -5,7 +5,7 @@ week: 2
 semester: "Fall 2026"
 phase: "Sneaker Anatomy and Benchmarking"
 status: "complete"
-hours: 0
+hours: 8
 summary: "Built a working map of sneaker anatomy: thirty components across five systems, ten pairs of commonly confused terms, six construction architectures, and an audit template for the teardown work ahead."
 tags:
   - anatomy
