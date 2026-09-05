@@ -103,6 +103,25 @@ export const sources: Source[] = [
     placeholder: true,
   },
   {
+    id: 'src-motawi-how-shoes-are-made',
+    citation: 'Motawi, W. (n.d.). How shoes are made: A behind the scenes look at manufacturing.',
+    authors: ['Motawi, W.'],
+    year: 'n.d.',
+    type: 'book',
+    tags: ['anatomy', 'processes', 'construction', 'footbeds', 'lasts'],
+    dateAccessed: '2026-09-05',
+    summary:
+      'Practitioner reference covering shoe manufacturing end to end: lasting, cemented (cold cement) and vulcanized sole construction, last measurement terminology and quality-control gauges, and footbed/sockliner construction types and materials.',
+    relevance:
+      'Primary source for this project’s manufacturing-process detail (cold cement vs. vulcanized construction, lasting sequence, last measurement terminology, last-gauge quality control) and for footbed/sockliner material options.',
+    keyTakeaway:
+      'Cold cement and vulcanized construction differ specifically in how and when the outsole is built and attached, not just in what adhesive is used; and footbed lifespan is governed by a foam’s compression-set resistance, not just its initial feel.',
+    reliabilityNotes:
+      'A practitioner/industry manufacturing guide rather than a peer-reviewed source. Author is a footwear industry professional (Wade Motawi). Exact publication year and edition were not visible on the pages reviewed and should be confirmed from the book’s copyright page before this citation is treated as complete.',
+    evidence: 'published-evidence',
+    placeholder: false,
+  },
+  {
     id: 'src-patent-resilin-footwear',
     citation:
       '(n.d.). Resilin material footwear and fabrication methods (U.S. Patent No. 11,178,934). U.S. Patent and Trademark Office. https://patents.google.com/patent/US11178934B2/',

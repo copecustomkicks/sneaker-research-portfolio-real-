@@ -268,15 +268,27 @@ export const anatomy: AnatomyComponent[] = [
     name: 'Sockliner',
     group: 'internal',
     function:
-      'The foot-contact insert directly under the foot, often removable. Provides comfort, fit, and local cushioning — distinct from the midsole, the primary underfoot structural/cushioning system beneath it.',
-    commonMaterials: [],
+      'The foot-contact insert directly under the foot, often removable. Provides comfort, fit, and local cushioning — distinct from the midsole, the primary underfoot structural/cushioning system beneath it. The last is built with a "sock allowance" — typically 4mm or more of extra space at the bottom — specifically so a footbed of the intended thickness fits without loosening or tightening the shoe.',
+    commonMaterials: [
+      'Compression-molded EVA foam (lightweight, inexpensive, very common)',
+      'Poured polyurethane (PU) foam (plush feel, longer-lasting, heavier than EVA)',
+      'Die-cut EVA or PU foam, sometimes multiple layers (the cheapest construction route)',
+      'Latex foam wedge inserts (used in some insulated/hunting boots)',
+      'Moisture-wicking fabric or leather cover material',
+    ],
     relevantProperties: ['Compression set resistance', 'Shear strength'],
-    commonProcesses: [],
-    designTradeoffs: [],
+    commonProcesses: ['Die cutting (flat, unmolded)', 'Compression or injection molding (contoured)', 'Pouring (for PU foam)'],
+    designTradeoffs: [
+      'Die-cut footbeds are cheap and easy to produce but flat, thin, and offer no contoured support; molded footbeds cost more but can be shaped to the last for underfoot support.',
+      'Poured PU footbeds feel plush and last longer than compression-molded EVA, but are noticeably heavier for the same volume.',
+      'A cheap, overly soft foam can compress and pack out within days, leaving the shoe fitting loose and the wearer with tired feet — compression-set resistance matters more to footbed lifespan than initial softness.',
+      'A leather or low-friction cover resists crocking and rubbing better than some fabrics, but running shoes specifically need a cover material that will not run too smooth to grip a sock.',
+    ],
     questionsToInvestigate: [
       'A thick removable internal foam layer should not be assumed to be a simple sockliner — its actual placement and function should be described rather than assumed.',
+      'What sock allowance does this project’s last actually provide, and does the intended footbed thickness fit it without needing to re-cut the last?',
     ],
-    relatedSourceIds: BASE_SOURCES,
+    relatedSourceIds: [...BASE_SOURCES, 'src-motawi-how-shoes-are-made'],
   },
   {
     id: 'midsole',
@@ -424,6 +436,21 @@ export const anatomy: AnatomyComponent[] = [
     designTradeoffs: [],
     questionsToInvestigate: [],
     relatedSourceIds: BASE_SOURCES,
+  },
+  {
+    id: 'last',
+    name: 'Last',
+    group: 'tooling',
+    function:
+      'The three-dimensional form the shoe is built around. Tooling, not a part of the finished shoe — it determines internal volume, fit, and silhouette, and every downstream pattern piece is derived from its surface. Described with a standard set of measurements: stick length, bottom length, toe spring, heel lift, girths (ball, waist, instep, long and short heel, each measured around the last with flexible tape), and widths (ball, waist, instep, heel, each measured across the last bottom).',
+    commonMaterials: ['Aluminum (required specifically for vulcanized construction, to survive oven heat during curing)'],
+    relevantProperties: ['Dimensional accuracy', 'Surface hardness', 'Heat resistance', 'Release behavior'],
+    commonProcesses: ['CNC machining', '3D printing', 'Digital modeling', 'Lasting'],
+    designTradeoffs: [],
+    questionsToInvestigate: [
+      'Production quality control uses paper "last gauges" cut by computer with the critical dimensions, size, and code number marked on them, checked against sample lasts and then every production last — worth adopting a version of this check for any lasts used in this project, home-fabricated or sourced.',
+    ],
+    relatedSourceIds: [...BASE_SOURCES, 'src-motawi-how-shoes-are-made'],
   },
 ];
 

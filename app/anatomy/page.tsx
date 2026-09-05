@@ -20,7 +20,7 @@ export default function AnatomyPage() {
       <PageHeader
         eyebrow="Reference"
         title="Sneaker anatomy"
-        lede="Thirty components across the upper, lasting, sole, and joining systems — what each one does and the terms it is easy to confuse it with."
+        lede="Thirty-one components across the upper, lasting, sole, joining, and tooling systems — what each one does and the terms it is easy to confuse it with."
       />
 
       <div className="pt-8">
