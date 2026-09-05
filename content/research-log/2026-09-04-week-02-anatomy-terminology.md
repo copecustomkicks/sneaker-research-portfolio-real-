@@ -7,6 +7,8 @@ semester: "Fall 2026"
 phase: "Sneaker Anatomy and Benchmarking"
 status: "complete"
 hours: 8
+featuredImage: "/images/sneaker-anatomy-diagram.png"
+featuredImageAlt: "Line-art side profile of a generic low-top sneaker with labels pointing to the tongue, throat opening, collar, collar lining, heel tab, sock liner, quarter panel, side overlay, heel overlay, heel counter, heel, laces, eyestay, eyelets, vamp, toe box, toe cap, mudguard, insole, midsole, and outsole"
 summary: "Built a working map of sneaker anatomy: thirty-one components across five systems, ten pairs of commonly confused terms, six construction architectures, plus real last-measurement, sole-attachment, and footbed manufacturing detail from a practitioner reference."
 tags:
   - anatomy
@@ -80,6 +82,7 @@ Full records with summaries and reliability notes are in the [research library](
 ## Evidence and artifacts
 
 - Photographed my own copy of *How Shoes Are Made* as evidence of the physical source — the book's cover only, not its interior pages. See the [gallery](/gallery).
+- Added a labeled call-out diagram of a generic sneaker to give the anatomy vocabulary a visual reference, shown above and on the [anatomy page](/anatomy).
 
 ## Reflection
 
