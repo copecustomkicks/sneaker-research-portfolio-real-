@@ -104,9 +104,9 @@ export const sources: Source[] = [
   },
   {
     id: 'src-motawi-how-shoes-are-made',
-    citation: 'Motawi, W. (n.d.). How shoes are made: A behind the scenes look at manufacturing.',
+    citation: 'Motawi, W. (2024). How shoes are made: A behind the scenes look at manufacturing (Rev. ed.). (Original work published 2017).',
     authors: ['Motawi, W.'],
-    year: 'n.d.',
+    year: '2024',
     type: 'book',
     tags: ['anatomy', 'processes', 'construction', 'footbeds', 'lasts'],
     dateAccessed: '2026-09-05',
@@ -117,7 +117,7 @@ export const sources: Source[] = [
     keyTakeaway:
       'Cold cement and vulcanized construction differ specifically in how and when the outsole is built and attached, not just in what adhesive is used; and footbed lifespan is governed by a foam’s compression-set resistance, not just its initial feel.',
     reliabilityNotes:
-      'A practitioner/industry manufacturing guide rather than a peer-reviewed source. Author is a footwear industry professional (Wade Motawi). Exact publication year and edition were not visible on the pages reviewed and should be confirmed from the book’s copyright page before this citation is treated as complete.',
+      'A practitioner/industry manufacturing guide rather than a peer-reviewed source. Author is a footwear industry professional (Wade Motawi). Copyrighted and originally produced in 2017, with a revised edition in 2024 — cited by the 2024 revision since that is the edition consulted.',
     evidence: 'published-evidence',
     placeholder: false,
   },

@@ -73,7 +73,7 @@ tags:
 - (n.d.). Description of footwear parts [Thesis]. Theseus.
 - Leonas, K. (2018, September 29). Footwear materials and fabrication [Conference presentation]. Footwear Distributors and Retailers of America.
 - Li, G. (n.d.). An approach of applying one specific culture to footwear design through function and fashion [Master's thesis, Auburn University]. AUETD.
-- Motawi, W. (n.d.). How shoes are made: A behind the scenes look at manufacturing.
+- Motawi, W. (2024). How shoes are made: A behind the scenes look at manufacturing (Rev. ed.). (Original work published 2017).
 
 Full records with summaries and reliability notes are in the [research library](/sources).
 
@@ -86,5 +86,4 @@ This week reframed the shoe as an interconnected system rather than a list of me
 - Begin physical inspection and teardown of benchmark shoes, using the anatomy audit template built this week.
 - Photograph pre-cut, during-cut, and isolated components with consistent naming for the gallery.
 - Carry the open questions about hidden construction (plate extent, heel-counter geometry, adhesive coverage) into the teardown work.
-- Confirm the publication year and edition of *How Shoes Are Made* from its copyright page so the source record is complete.
 - Check whether cold cement or vulcanized construction is the more realistic route given available equipment before this becomes a design decision in Phase 5.
