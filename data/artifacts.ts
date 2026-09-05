@@ -15,7 +15,24 @@ import type { Artifact, ArtifactType } from '@/types';
  * `alt` is required on every record. Describe what is visible and what the
  * reader is meant to notice — not "photo of shoe".
  */
-export const artifacts: Artifact[] = [];
+export const artifacts: Artifact[] = [
+  {
+    id: 'art-how-shoes-are-made-cover',
+    title: 'Reference copy: How Shoes Are Made',
+    date: '2026-09-05',
+    type: 'photograph',
+    description:
+      'The researcher’s own physical copy of Wade Motawi’s How Shoes Are Made, used as a source this week for last measurement terminology, cold cement and vulcanized construction, and footbed materials.',
+    caption:
+      'Photograph of the researcher’s copy of the source book. The book’s own interior pages are not reproduced here — only cited; see the research library entry for what was drawn from it.',
+    src: '/images/how-shoes-are-made-book-cover.jpg',
+    alt: 'A hand holding a paperback copy of "How Shoes Are Made: A behind the scenes look at a real sneaker factory" by Wade Motawi, cover showing a sneaker on a factory floor',
+    phaseId: 'phase-02',
+    relatedLogSlug: '2026-09-04-week-02-anatomy-terminology',
+    attributionNotes:
+      'Photograph of the book’s cover only, taken by the researcher of his own physical copy. Cover design and title are the copyrighted work of Wade Motawi; shown here as evidence of the source material, not reproduced as content. Interior pages are cited on the sources page, not reproduced.',
+  },
+];
 
 /*
 EXAMPLE — copy this, fill it in, and add it to the array above.

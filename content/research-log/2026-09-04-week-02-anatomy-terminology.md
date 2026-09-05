@@ -77,6 +77,10 @@ tags:
 
 Full records with summaries and reliability notes are in the [research library](/sources).
 
+## Evidence and artifacts
+
+- Photographed my own copy of *How Shoes Are Made* as evidence of the physical source — the book's cover only, not its interior pages. See the [gallery](/gallery).
+
 ## Reflection
 
 This week reframed the shoe as an interconnected system rather than a list of memorized part names — the anatomy vocabulary only becomes useful once it is tied to function, location, and how the construction method changes what is actually present. I am still unsure how much the category-specific architecture patterns (running vs. basketball vs. training) will hold up once real teardown observations are available.
