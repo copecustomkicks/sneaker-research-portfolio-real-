@@ -45,7 +45,7 @@ export const phases: ResearchPhase[] = [
     status: 'in-progress',
     plannedDates: 'Sep 2026',
     actualDates: 'Started Sep 2026',
-    completion: 55,
+    completion: 35,
     objectives: [
       'Document every major sneaker component and its function',
       'Disassemble or closely inspect existing footwear to observe construction',

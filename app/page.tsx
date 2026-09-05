@@ -11,7 +11,6 @@ import { getLatestEntry, getLogSummaries } from '@/lib/log';
 import { getCurrentPhase, getOverallCompletion, phases } from '@/data/phases';
 import { getRealSources } from '@/data/sources';
 import { prototypes } from '@/data/prototypes';
-import { activeResearchNotice } from '@/data/project';
 import { formatDate, pluralize, sumBy } from '@/lib/utils';
 
 export const metadata: Metadata = {
@@ -184,8 +183,6 @@ export default function HomePage() {
             </li>
           ))}
         </ul>
-
-        <p className="mt-10 max-w-prose text-ink-muted">{activeResearchNotice}</p>
       </Section>
     </div>
   );
