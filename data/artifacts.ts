@@ -32,6 +32,22 @@ export const artifacts: Artifact[] = [
     attributionNotes:
       'Photograph of the book’s cover only, taken by the researcher of his own physical copy. Cover design and title are the copyrighted work of Wade Motawi; shown here as evidence of the source material, not reproduced as content. Interior pages are cited on the sources page, not reproduced.',
   },
+  {
+    id: 'art-anatomy-callout-diagram',
+    title: 'Sneaker anatomy call-out diagram',
+    date: '2026-09-05',
+    type: 'diagram',
+    description:
+      'A labeled side-profile line drawing of a generic low-top sneaker, used to give the anatomy page a visual reference alongside its component tables.',
+    caption:
+      'Generic low-top silhouette, not modeled on any specific brand or product, with the upper, lasting, and sole components called out by name.',
+    src: '/images/sneaker-anatomy-diagram.png',
+    alt: 'Line-art side profile of a generic low-top sneaker with labels pointing to the tongue, throat opening, collar, collar lining, heel tab, sock liner, quarter panel, side overlay, heel overlay, heel counter, heel, laces, eyestay, eyelets, vamp, toe box, toe cap, mudguard, insole, midsole, and outsole',
+    phaseId: 'phase-02',
+    relatedLogSlug: '2026-09-04-week-02-anatomy-terminology',
+    attributionNotes:
+      'AI-generated original diagram, produced to illustrate anatomy terminology. Not based on any specific brand or existing product design.',
+  },
 ];
 
 /*

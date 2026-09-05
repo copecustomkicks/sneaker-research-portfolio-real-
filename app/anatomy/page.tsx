@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import type { Metadata } from 'next';
 import { PageHeader } from '@/components/PageHeader';
@@ -6,6 +7,7 @@ import { Callout } from '@/components/Callout';
 import { Badge } from '@/components/Badge';
 import { anatomy, anatomyGroups } from '@/data/anatomy';
 import { getSource } from '@/data/sources';
+import { getArtifact } from '@/data/artifacts';
 
 export const metadata: Metadata = {
   title: 'Sneaker anatomy',
@@ -15,6 +17,8 @@ export const metadata: Metadata = {
 };
 
 export default function AnatomyPage() {
+  const diagram = getArtifact('art-anatomy-callout-diagram');
+
   return (
     <div className="shell sec-research pb-20">
       <PageHeader
@@ -22,6 +26,22 @@ export default function AnatomyPage() {
         title="Sneaker anatomy"
         lede="Thirty-one components across the upper, lasting, sole, joining, and tooling systems — what each one does and the terms it is easy to confuse it with."
       />
+
+      {diagram?.src && (
+        <figure className="mt-8 card overflow-hidden p-0">
+          <Image
+            src={diagram.src}
+            alt={diagram.alt}
+            width={1448}
+            height={1086}
+            sizes="(min-width: 1024px) 900px, 100vw"
+            className="w-full"
+          />
+          <figcaption className="border-t border-rule px-6 py-4 text-[0.9375rem] text-ink-muted">
+            {diagram.caption}
+          </figcaption>
+        </figure>
+      )}
 
       <div className="pt-8">
         <Callout tone="integrity" title="No uncited numbers on this page">
