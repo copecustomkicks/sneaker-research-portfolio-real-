@@ -35,8 +35,8 @@ tags:
 
 ## Key considerations / research
 
-- [Assumption] 3D printing could be useful for a midsole or support structure — rapid iteration, lattice geometry, zonal stiffness, and a direct CAD-to-physical link — but nothing was committed to. It should be justified by the design problem, not used because the tool is available.
-- [Project conclusion] Terms like "Achilles injury," "poor arch support," "injury prevention," or "rehabilitation" can turn a footwear concept into a clinical or therapeutic claim without meaning to. Going forward, concept language should describe intended mechanical behavior (geometry, support, loading, comfort) rather than implied medical outcomes.
+- 3D printing could be useful for a midsole or support structure — rapid iteration, lattice geometry, zonal stiffness, and a direct CAD-to-physical link — but nothing was committed to. It should be justified by the design problem, not used because the tool is available.
+- Terms like "Achilles injury," "poor arch support," "injury prevention," or "rehabilitation" can turn a footwear concept into a clinical or therapeutic claim without meaning to. Going forward, concept language should describe intended mechanical behavior (geometry, support, loading, comfort) rather than implied medical outcomes.
 - I did not do formal literature research this week on Achilles biomechanics, arch support, or plantar pressure. That reading is deferred until closer to concept selection (see sources below).
 - Rough mapping of possible user needs back to Week 02 vocabulary: rearfoot control involves the heel counter, heel clip, quarter, and midsole sidewalls; underfoot support involves the sockliner, footbed, and midsole geometry; fit and containment involve the vamp, quarter, eyestay, lacing, and tongue. No numerical targets were attached to any of these yet.
 
@@ -49,11 +49,11 @@ tags:
 
 ## Challenges / open questions
 
-- [Open question] How technically ambitious should the first prototype be?
-- [Open question] Should the project prioritize mechanical engineering depth or the full footwear product-development process?
-- [Open question] How much biomechanical validation is realistic within the project schedule?
-- [Open question] Is 3D printing the right tool for whichever design problem gets chosen, or just an attractive option?
-- [Open question] Should the target user be me, to make fit, wear testing, and iteration easier?
+- How technically ambitious should the first prototype be?
+- Should the project prioritize mechanical engineering depth or the full footwear product-development process?
+- How much biomechanical validation is realistic within the project schedule?
+- Is 3D printing the right tool for whichever design problem gets chosen, or just an attractive option?
+- Should the target user be me, to make fit, wear testing, and iteration easier?
 - What will the upcoming materials, manufacturing, teardown, and benchmarking work — and the Footwear Product Development course — change about which concept makes sense?
 
 ## Sources identified for follow-up
