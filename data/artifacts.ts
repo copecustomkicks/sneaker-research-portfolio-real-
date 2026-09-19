@@ -48,6 +48,38 @@ export const artifacts: Artifact[] = [
     attributionNotes:
       'AI-generated original diagram, produced to illustrate anatomy terminology. Not based on any specific brand or existing product design.',
   },
+  {
+    id: 'art-kobe-9-component-callouts',
+    title: 'Nike Kobe 9 EM Low component callout study',
+    date: '2026-09-19',
+    type: 'diagram',
+    description:
+      'A component callout study of the Nike Kobe 9 EM Low, completed for Week 1 of the Footwear Product Development course to practice the week’s component-labeling conventions.',
+    caption:
+      'Twenty numbered components labeled from heel counter to outsole, applying the location-and-construction naming convention covered in class.',
+    src: '/images/kobe-9-component-callouts.png',
+    alt: 'Line illustration of a Nike Kobe 9 EM Low basketball shoe with twenty numbered leader lines labeling components including heel counter, collar, quarter, tongue, laces, eyestay, vamp, eyelets, lateral swoosh, midsole panels, and outsole',
+    phaseId: 'phase-02',
+    relatedLogSlug: '2026-09-15-week-04-footwear-product-development-fundamentals',
+    attributionNotes:
+      'Base illustration traced and rendered by the researcher in Adobe Illustrator; numbered callouts are the researcher’s own labeling work. A component-identification study of an existing, named commercial shoe for coursework, not a claim of designing, manufacturing, or being affiliated with the original product.',
+  },
+  {
+    id: 'art-aj1-voodoo-component-callouts',
+    title: 'Air Jordan 1 Low OG "Voodoo" component callout study',
+    date: '2026-09-19',
+    type: 'diagram',
+    description:
+      'A component callout study of the Air Jordan 1 Low OG "Voodoo" (Zion Williamson), completed for Week 1 of the Footwear Product Development course as a second application of the same labeling system.',
+    caption:
+      'Twenty-one numbered components labeled from tip to outsole, including the overlay/underlay and cupsole distinctions covered in class.',
+    src: '/images/aj1-voodoo-component-callouts.png',
+    alt: 'Line illustration of an Air Jordan 1 Low OG "Voodoo" sneaker with twenty-one numbered leader lines labeling components including tip, vamp, quarter overlay, eyestay, tongue, collar, heel tab, cupsole, and outsole',
+    phaseId: 'phase-02',
+    relatedLogSlug: '2026-09-15-week-04-footwear-product-development-fundamentals',
+    attributionNotes:
+      'Base illustration traced and rendered by the researcher in Adobe Illustrator; numbered callouts are the researcher’s own labeling work. A component-identification study of an existing, named commercial shoe for coursework, not a claim of designing, manufacturing, or being affiliated with the original product.',
+  },
 ];
 
 /*
