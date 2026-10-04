@@ -28,7 +28,7 @@ tags:
 
 ## Activities completed
 
-- Completed a two-part callout exercise on a Puma RS-X: a 20-item component callout (toe tip, lateral vamp overlay, vamp, lower eyestay, laces, lace keeper, upper eyestay, tongue tab, eyelet, tongue, collar lining, heel tab/collar, heel loop, heel clip, heel overlay, lateral logo, quarter, quarter overlay, midsole, outsole) and a 6-item construction-detail callout (double stitching, hole punchout eyelets, single stitching, molded outsole, perforated holes in vamp, stitched logo). Unlike the Kobe 9 and AJ1 Voodoo studies, the base image here was a reference photograph found online, not one I traced myself — see Engineering decisions for how that changes what gets published.
+- Completed a two-part callout exercise on my own pair of Puma RS-X sneakers: a 20-item component callout (toe tip, lateral vamp overlay, vamp, lower eyestay, laces, lace keeper, upper eyestay, tongue tab, eyelet, tongue, collar lining, heel tab/collar, heel loop, heel clip, heel overlay, lateral logo, quarter, quarter overlay, midsole, outsole) and a 6-item construction-detail callout (double stitching, hole punchout eyelets, single stitching, molded outsole, perforated holes in vamp, stitched logo). See Evidence and artifacts below.
 - Learned that footwear development runs on a structured product creation calendar, not a purely design-driven process — specific activities happen at specific stages as a design moves from concept to samples, testing, commercialization, and mass production. The developer tracks product details, cost, materials, tooling, samples, testing, revisions, and deadlines as the link between design intent and manufacturing execution.
 - Studied the tech pack as the communication document that turns a 2D design into factory-usable instructions. A complete tech pack can include: marketing/product brief, blank or identification CAD, component and construction-detail callout CAD, material CAD, bill of materials, shell pattern, tooling drawing, rough cost breakdown, development/workback calendar, wear-test plan, and a factory summary of strengths and challenges. Main lesson: a good tech pack minimizes ambiguity — repeated factory questions mean the documentation wasn't detailed enough.
 - Extended the last → shell pattern → upper → tooling relationship from Week 04: the shell pattern is the 2D framework for upper components shaped around the 3D last; tooling mainly means midsole/outsole molds. A last and tooling are not the same thing — a plastic last doesn't inherently require a new mold the way a molded bottom-unit component does. Reusing existing midsole/outsole tooling on a new model avoids major tooling investment, shifting cost focus to materials, labor, and overhead.
@@ -41,7 +41,7 @@ tags:
 
 ## Engineering decisions
 
-- Only embed a shoe image on this site when I created or traced the base illustration myself, or photographed my own physical item. A found or stock photograph of a current commercial product gets cited and described in text instead, the same way the Motawi textbook pages were cited without reproducing the scanned images — which is why the Puma RS-X callouts above are listed in text rather than shown as an image.
+- Only embed a shoe image on this site when I created or traced the base illustration myself, or photographed my own physical item — not a found or stock photograph of a current commercial product.
 - Adopt the developer's question set, not the consumer's or designer's, when evaluating my own candidate concept directions going forward: buildable as intended, repeatable at volume, realistically costed, and able to survive its intended use.
 - Treat "worked once as a sample" and "can be mass-produced" as two separate claims for any construction or finishing choice I consider later.
 - Treat how an embellishment or logo is physically applied, not just that it exists, as part of any future bill-of-materials or construction documentation.
@@ -55,7 +55,15 @@ Class materials, not independently published literature:
 
 ## Evidence and artifacts
 
-- The 20 component-callout and 6 construction-detail-callout labels above, applied to a Puma RS-X reference photograph (not reproduced on this site — see Engineering decisions).
+Two callout studies on my own pair of Puma RS-X sneakers, photographed and labeled by me.
+
+![Puma RS-X component callout photograph, with twenty numbered parts labeled from toe tip to outsole](/images/puma-rsx-component-callouts.png)
+
+*Puma RS-X component callout study — photograph and labeling by Aidan Copeland, completed during Week 5 of Footwear Product Development.*
+
+![Puma RS-X construction-detail callout photograph, with six numbered construction features labeled across a side view, top-down view, and outsole view](/images/puma-rsx-construction-callouts.png)
+
+*Puma RS-X construction-detail callout study — photograph and labeling by Aidan Copeland, completed during Week 5 of Footwear Product Development.*
 
 ## Reflection
 

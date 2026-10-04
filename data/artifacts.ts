@@ -80,6 +80,38 @@ export const artifacts: Artifact[] = [
     attributionNotes:
       'Base illustration traced and rendered by the researcher in Adobe Illustrator; numbered callouts are the researcher’s own labeling work. A component-identification study of an existing, named commercial shoe for coursework, not a claim of designing, manufacturing, or being affiliated with the original product.',
   },
+  {
+    id: 'art-puma-rsx-component-callouts',
+    title: 'Puma RS-X component callout study',
+    date: '2026-09-27',
+    type: 'diagram',
+    description:
+      'A component callout study of the researcher’s own Puma RS-X sneakers, completed for Week 5 of the Footwear Product Development course.',
+    caption:
+      'Twenty numbered components labeled from toe tip to outsole, on the researcher’s own pair.',
+    src: '/images/puma-rsx-component-callouts.png',
+    alt: 'Photograph of a colorful Puma RS-X sneaker with twenty numbered leader lines labeling components including toe tip, vamp, lace keeper, tongue tab, collar lining, heel clip, lateral logo, quarter overlay, midsole, and outsole',
+    phaseId: 'phase-02',
+    relatedLogSlug: '2026-09-21-week-05-product-development-documentation-and-testing',
+    attributionNotes:
+      'Photograph of the researcher’s own physical pair, taken and labeled by the researcher. A component-identification study of his own shoe for coursework, not a claim of designing or manufacturing the original product.',
+  },
+  {
+    id: 'art-puma-rsx-construction-callouts',
+    title: 'Puma RS-X construction-detail callout study',
+    date: '2026-09-27',
+    type: 'diagram',
+    description:
+      'A construction-detail callout study of the researcher’s own Puma RS-X sneakers, completed for Week 5 of the Footwear Product Development course.',
+    caption:
+      'Six numbered construction features labeled across a side view, top-down view, and outsole view, on the researcher’s own pair.',
+    src: '/images/puma-rsx-construction-callouts.png',
+    alt: 'Photographs of a colorful Puma RS-X sneaker from side, top-down, and outsole views with six numbered leader lines labeling double stitching, hole punchout eyelets, single stitching, molded outsole, perforated holes in vamp, and stitched logo',
+    phaseId: 'phase-02',
+    relatedLogSlug: '2026-09-21-week-05-product-development-documentation-and-testing',
+    attributionNotes:
+      'Photograph of the researcher’s own physical pair, taken and labeled by the researcher. A construction-identification study of his own shoe for coursework, not a claim of designing or manufacturing the original product.',
+  },
 ];
 
 /*
