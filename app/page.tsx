@@ -169,12 +169,12 @@ export default function HomePage() {
 
       {/* Six destinations, not sixteen. The rest live in the Sections menu. */}
       <Section title="Contents" className="pb-24">
-        <ul className="flex flex-wrap gap-3">
+        <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {highlights.map((item) => (
             <li key={item.href}>
               <Link
                 href={item.href}
-                className="inline-block rounded-[3px] border border-rule-strong bg-paper-raised px-5 py-2.5 font-medium text-ink transition-colors hover:bg-paper-sunken hover:text-[var(--accent)]"
+                className="card flex h-full items-center p-6 font-semibold text-ink transition-shadow hover:shadow-card"
               >
                 {item.label}
               </Link>
