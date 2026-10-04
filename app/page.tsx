@@ -11,6 +11,7 @@ import { getLatestEntry, getLogSummaries } from '@/lib/log';
 import { getCurrentPhase, getOverallCompletion, phases } from '@/data/phases';
 import { getRealSources } from '@/data/sources';
 import { prototypes } from '@/data/prototypes';
+import { completionDisclaimer } from '@/lib/metrics';
 import { formatDate, pluralize, sumBy } from '@/lib/utils';
 
 export const metadata: Metadata = {
@@ -110,9 +111,7 @@ export default function HomePage() {
               <span className="font-mono text-2xl font-semibold text-ink">{completion}%</span>
             </div>
             <ProgressBar value={completion} label={`Overall progress, ${completion} percent`} />
-            <p className="mt-2 text-[0.875rem] text-ink-muted">
-              A planning estimate across eleven phases, not a grade.
-            </p>
+            <p className="mt-2 text-[0.875rem] text-ink-muted">{completionDisclaimer}</p>
 
             <dl className="mt-8 grid grid-cols-2 gap-x-6 gap-y-6">
               {stats.map((stat) => (

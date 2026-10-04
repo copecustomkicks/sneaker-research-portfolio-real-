@@ -14,7 +14,7 @@ import type { ProjectMetric } from '@/types';
  */
 
 export const completionDisclaimer =
-  'Overall completion is the average across the eleven roadmap phases — a planning estimate, not an academic grade.';
+  'The unweighted average of all eleven phases (1/11 each), based on documented deliverables — not elapsed calendar time. A planning estimate, not a grade.';
 
 export function getProjectMetrics(): ProjectMetric[] {
   const entries = getLogSummaries();
@@ -29,7 +29,7 @@ export function getProjectMetrics(): ProjectMetric[] {
       id: 'current-phase',
       label: 'Current phase',
       value: `Phase ${currentPhase.number} — ${currentPhase.name}`,
-      derivation: 'First phase in data/phases.ts still marked in-progress or not-started.',
+      derivation: 'Lowest-numbered phase in data/phases.ts not marked complete (in-progress preferred over not-started).',
       href: '/roadmap',
     },
     {
@@ -37,7 +37,7 @@ export function getProjectMetrics(): ProjectMetric[] {
       label: 'Overall completion',
       value: getOverallCompletion(),
       unit: '%',
-      derivation: 'Mean of the completion values across all eleven phases. A planning estimate, not a grade.',
+      derivation: 'Unweighted mean of the completion values across all eleven phases (1/11 each). A planning estimate, not a grade.',
       href: '/roadmap',
     },
     {
