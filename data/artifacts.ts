@@ -112,6 +112,22 @@ export const artifacts: Artifact[] = [
     attributionNotes:
       'Photograph of the researcher’s own physical pair, taken and labeled by the researcher. A construction-identification study of his own shoe for coursework, not a claim of designing or manufacturing the original product.',
   },
+  {
+    id: 'art-week3-bom-error-analysis',
+    title: 'BOM error-analysis worksheet',
+    date: '2026-10-01',
+    type: 'report',
+    description:
+      'A bill-of-materials error-analysis exercise from Week 3 of Footwear Product Development, comparing a BOM against a finished shoe for material, quantity, color, and construction-method discrepancies.',
+    caption:
+      'Corrections (highlighted, arrow-annotated) against the original specification, including a logo construction-method error later discussed in class.',
+    src: '/images/fash912-week3-bom-error-analysis.png',
+    alt: 'Bill of materials table with several cells highlighted showing corrections, such as vamp strap gore width, eyelet quantity, tongue material, webbing logo application method, quarter overlay stitching, lining colors, and midsole/outsole materials',
+    phaseId: 'phase-04',
+    relatedLogSlug: '2026-09-29-week-06-commercialization-and-factory-communication',
+    attributionNotes:
+      'Corrections and analysis by the researcher as a course exercise; the base BOM worksheet is course material, not a real company’s proprietary document.',
+  },
 ];
 
 /*
