@@ -76,8 +76,7 @@ export default function TestingPage() {
               </Link>
             }
           >
-            Testing starts in Phase 9, once something exists to test. Component experiments in Phase 8
-            will produce the first measurements.
+            Starts in Phase 9, once Phase 8 produces something to test.
           </EmptyState>
         ) : (
           <div className="space-y-6">

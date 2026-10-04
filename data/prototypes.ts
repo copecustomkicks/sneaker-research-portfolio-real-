@@ -55,7 +55,7 @@ EXAMPLE — copy this, fill it in, and add it to the array above.
 */
 
 export const noPrototypeMessage =
-  'No prototype has been fabricated yet. Fabrication is scheduled for Phase 8. Component experiments will appear here first, before any complete shoe exists.';
+  'Scheduled for Phase 8. Component experiments come first.';
 
 export function getPrototype(id: string): Prototype | undefined {
   return prototypes.find((prototype) => prototype.id === id);

@@ -62,7 +62,7 @@ export default function PrototypesPage() {
         id="experiments"
         eyebrow={`${experiments.length} recorded`}
         title="Component experiments"
-        description="Small builds that answer one question each — a bonded sample, a seam test, a foam stack. These come first."
+        description="One question each — a bonded sample, a seam test, a foam stack."
         className="scroll-mt-24"
       >
         {experiments.length === 0 ? (
@@ -97,8 +97,7 @@ export default function PrototypesPage() {
       >
         {fullShoes.length === 0 ? (
           <EmptyState title="No complete shoe has been built">
-            This section stays empty until a shoe exists. Fabrication is scheduled for Phase 8, after
-            material selection, pattern development, and the component experiments above.
+            Scheduled for Phase 8, after materials, patterns, and the component experiments above.
           </EmptyState>
         ) : (
           <div className="space-y-6">

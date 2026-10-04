@@ -140,8 +140,7 @@ export default function DesignPage() {
         </Callout>
         <div className="mt-6">
           <EmptyState title="No benchmark teardowns recorded yet">
-            Teardowns begin in Phase 2. Each one will be added as a research-log entry with
-            photographs, and the construction observations will be summarized here.
+            Begins in Phase 2, logged with photographs as it happens.
           </EmptyState>
         </div>
       </Section>
@@ -184,9 +183,7 @@ export default function DesignPage() {
         className="scroll-mt-24"
       >
         <EmptyState title="No CAD or pattern work yet">
-          Phase 7 produces the first last and sole geometry and the flat pattern set. Screenshots and
-          revision notes will be published here and in the gallery, with each pattern revision
-          documented against the fit problem it was trying to solve.
+          Starts in Phase 7 — published here and in the gallery as revisions happen.
         </EmptyState>
       </Section>
 

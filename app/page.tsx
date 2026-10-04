@@ -22,12 +22,12 @@ export const metadata: Metadata = {
 
 /** The six destinations worth surfacing on the home page. */
 const highlights = [
-  { href: '/research-log', label: 'Research log', note: 'Week-by-week record of the work' },
-  { href: '/overview', label: 'Project overview', note: 'Question, method, scope, and limits' },
-  { href: '/roadmap', label: 'Roadmap', note: 'Eleven phases and where things stand' },
-  { href: '/materials', label: 'Materials', note: 'Candidate materials and comparisons' },
-  { href: '/anatomy', label: 'Sneaker anatomy', note: 'What each component does' },
-  { href: '/prototypes', label: 'Prototypes', note: 'Builds, experiments, and failures' },
+  { href: '/research-log', label: 'Research log' },
+  { href: '/overview', label: 'Project overview' },
+  { href: '/roadmap', label: 'Roadmap' },
+  { href: '/materials', label: 'Materials' },
+  { href: '/anatomy', label: 'Sneaker anatomy' },
+  { href: '/prototypes', label: 'Prototypes' },
 ];
 
 export default function HomePage() {
@@ -168,16 +168,15 @@ export default function HomePage() {
       </Section>
 
       {/* Six destinations, not sixteen. The rest live in the Sections menu. */}
-      <Section eyebrow="Contents" title="What is documented here" className="pb-24">
-        <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      <Section title="Contents" className="pb-24">
+        <ul className="flex flex-wrap gap-3">
           {highlights.map((item) => (
             <li key={item.href}>
               <Link
                 href={item.href}
-                className="card block h-full p-6 transition-shadow hover:shadow-card"
+                className="inline-block rounded-[3px] border border-rule-strong bg-paper-raised px-5 py-2.5 font-medium text-ink transition-colors hover:bg-paper-sunken hover:text-[var(--accent)]"
               >
-                <span className="block text-lg font-semibold text-ink">{item.label}</span>
-                <span className="mt-1.5 block text-ink-muted">{item.note}</span>
+                {item.label}
               </Link>
             </li>
           ))}
