@@ -174,7 +174,7 @@ export default function HomePage() {
             <li key={item.href}>
               <Link
                 href={item.href}
-                className="card flex h-full items-center p-6 font-semibold text-ink transition-shadow hover:shadow-card"
+                className="card flex h-full items-center justify-center p-6 text-center font-semibold text-ink transition-shadow hover:shadow-card"
               >
                 {item.label}
               </Link>
