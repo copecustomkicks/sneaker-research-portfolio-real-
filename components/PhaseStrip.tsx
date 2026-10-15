@@ -62,7 +62,7 @@ export function PhaseStrip({
         <div
           className={cn(
             'mt-2 flex justify-between font-mono text-micro uppercase',
-            tone === 'dark' ? 'text-white/40' : 'text-ink-faint'
+            tone === 'dark' ? 'text-white/55' : 'text-ink-faint'
           )}
         >
           <span>Phase 1</span>

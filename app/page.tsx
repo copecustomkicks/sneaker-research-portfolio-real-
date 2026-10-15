@@ -8,6 +8,7 @@ import { ProgressBar } from '@/components/DataTable';
 import { PhaseStrip } from '@/components/PhaseStrip';
 import { site } from '@/lib/site';
 import { getLatestEntry, getLogSummaries } from '@/lib/log';
+import { getSectionForPath, sectionThemes } from '@/lib/sections';
 import { getCurrentPhase, getOverallCompletion, phases } from '@/data/phases';
 import { getRealSources } from '@/data/sources';
 import { prototypes } from '@/data/prototypes';
@@ -95,7 +96,7 @@ export default function HomePage() {
 
         <div className="grid gap-10 lg:grid-cols-[1.15fr_1fr] lg:gap-14">
           <div>
-            <p className="font-mono text-micro text-uf-orange">
+            <p className="font-mono text-micro text-uf-orange-bright">
               Phase {currentPhase.number} of {phases.length}
             </p>
             <p className="mt-2 text-3xl font-semibold leading-tight text-white">
@@ -131,9 +132,9 @@ export default function HomePage() {
           </div>
         </div>
 
-        <p className="mt-9 border-t border-rule pt-6 text-ink-muted">
+        <p className="mt-9 border-t border-white/15 pt-6 text-white/60">
           Last updated {latest ? formatDate(latest.date) : 'not yet published'}.{' '}
-          <Link href="/roadmap" className="text-uf-blue hover:underline">
+          <Link href="/roadmap" className="text-white underline underline-offset-2 hover:text-uf-orange-bright">
             See the full roadmap
           </Link>
         </p>
@@ -177,16 +178,26 @@ export default function HomePage() {
       {/* Six destinations, not sixteen. The rest live in the Sections menu. */}
       <Section title="Contents" className="pb-24">
         <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {highlights.map((item) => (
-            <li key={item.href}>
-              <Link
-                href={item.href}
-                className="card flex h-full items-center justify-center p-6 text-center font-semibold text-ink transition-shadow hover:shadow-card"
-              >
-                {item.label}
-              </Link>
-            </li>
-          ))}
+          {highlights.map((item) => {
+            const section = getSectionForPath(item.href);
+            const accent = section ? sectionThemes[section].accent : '#0021A5';
+            return (
+              <li key={item.href}>
+                <Link
+                  href={item.href}
+                  style={
+                    {
+                      borderColor: `${accent}4D`,
+                      '--glow': accent,
+                    } as React.CSSProperties
+                  }
+                  className="group flex h-full items-center justify-center rounded-2xl border bg-ink p-6 text-center font-semibold text-white shadow-[0_0_18px_-10px_var(--glow)] transition-all duration-300 hover:-translate-y-0.5 hover:border-[var(--glow)] hover:shadow-[0_0_28px_-6px_var(--glow)]"
+                >
+                  {item.label}
+                </Link>
+              </li>
+            );
+          })}
         </ul>
       </Section>
     </div>

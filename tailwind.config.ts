@@ -42,6 +42,7 @@ const config: Config = {
           'blue-deep': '#00187A',
           orange: '#C43A0E', // darkened from #FA4616 for AA contrast on light backgrounds
           'orange-soft': '#FBEAE3',
+          'orange-bright': '#FF6A33', // brightened for AA contrast as text on dark surfaces (e.g. the homepage status band)
         },
         material: {
           foam: '#E4E0D6',
