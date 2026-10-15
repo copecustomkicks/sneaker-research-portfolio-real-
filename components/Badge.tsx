@@ -22,7 +22,7 @@ export function Badge({ children, variant = 'neutral', className, title }: Badge
     <span
       title={title}
       className={cn(
-        'inline-flex items-center gap-1.5 whitespace-nowrap rounded-[3px] border px-2 py-0.5 font-mono text-micro font-medium uppercase',
+        'inline-flex items-center gap-1.5 whitespace-nowrap rounded-full border px-2.5 py-0.5 font-mono text-micro font-medium uppercase',
         variants[variant],
         className
       )}
@@ -39,7 +39,7 @@ export function EvidenceBadge({ type, full = false }: { type: EvidenceType; full
     <span
       title={evidence.definition}
       className={cn(
-        'inline-flex items-center whitespace-nowrap rounded-[3px] border px-2 py-0.5 font-mono text-micro font-medium uppercase',
+        'inline-flex items-center whitespace-nowrap rounded-full border px-2.5 py-0.5 font-mono text-micro font-medium uppercase',
         evidence.className
       )}
     >

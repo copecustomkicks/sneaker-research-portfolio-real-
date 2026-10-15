@@ -69,10 +69,13 @@ export function ProgressBar({
   value,
   label,
   size = 'md',
+  tone = 'light',
 }: {
   value: number;
   label: string;
   size?: 'sm' | 'md';
+  /** 'dark' reads on a near-black band, e.g. the homepage status panel. */
+  tone?: 'light' | 'dark';
 }) {
   const clamped = Math.max(0, Math.min(100, Math.round(value)));
   return (
@@ -82,10 +85,17 @@ export function ProgressBar({
       aria-valuemin={0}
       aria-valuemax={100}
       aria-label={label}
-      className={cn('w-full overflow-hidden rounded-full bg-paper-sunken', size === 'sm' ? 'h-1.5' : 'h-2')}
+      className={cn(
+        'w-full overflow-hidden rounded-full',
+        tone === 'dark' ? 'bg-white/15' : 'bg-paper-sunken',
+        size === 'sm' ? 'h-1.5' : 'h-2'
+      )}
     >
       <div
-        className="h-full rounded-full bg-uf-blue transition-[width] duration-500 ease-out"
+        className={cn(
+          'h-full rounded-full transition-[width] duration-500 ease-out',
+          tone === 'dark' ? 'bg-uf-orange' : 'bg-uf-blue'
+        )}
         style={{ width: `${clamped}%` }}
       />
     </div>

@@ -12,10 +12,13 @@ export function PhaseStrip({
   phases,
   currentId,
   showLabels = true,
+  tone = 'light',
 }: {
   phases: ResearchPhase[];
   currentId: string;
   showLabels?: boolean;
+  /** 'dark' reads on a near-black band, e.g. the homepage status panel. */
+  tone?: 'light' | 'dark';
 }) {
   const currentIndex = phases.findIndex((phase) => phase.id === currentId);
 
@@ -38,7 +41,11 @@ export function PhaseStrip({
                     'block h-2 rounded-full transition-colors',
                     done && 'bg-uf-blue',
                     current && 'bg-uf-orange',
-                    !done && !current && 'bg-rule group-hover:bg-rule-strong'
+                    !done &&
+                      !current &&
+                      (tone === 'dark'
+                        ? 'bg-white/15 group-hover:bg-white/25'
+                        : 'bg-rule group-hover:bg-rule-strong')
                   )}
                 />
                 <span className="sr-only">
@@ -52,7 +59,12 @@ export function PhaseStrip({
       </ol>
 
       {showLabels && (
-        <div className="mt-2 flex justify-between font-mono text-micro uppercase text-ink-faint">
+        <div
+          className={cn(
+            'mt-2 flex justify-between font-mono text-micro uppercase',
+            tone === 'dark' ? 'text-white/40' : 'text-ink-faint'
+          )}
+        >
           <span>Phase 1</span>
           <span>Phase {phases.length}</span>
         </div>

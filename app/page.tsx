@@ -85,8 +85,11 @@ export default function HomePage() {
       </section>
 
       {/* Status — the block that answers "where is this project right now?" */}
-      <section aria-labelledby="status-heading" className="card p-7 sm:p-9">
-        <h2 id="status-heading" className="eyebrow mb-7">
+      <section
+        aria-labelledby="status-heading"
+        className="rounded-card bg-ink p-7 text-white sm:p-9"
+      >
+        <h2 id="status-heading" className="font-mono text-micro font-medium uppercase text-white/50 mb-7">
           Where the project stands
         </h2>
 
@@ -95,29 +98,33 @@ export default function HomePage() {
             <p className="font-mono text-micro text-uf-orange">
               Phase {currentPhase.number} of {phases.length}
             </p>
-            <p className="mt-2 text-3xl font-semibold leading-tight text-ink">
+            <p className="mt-2 text-3xl font-semibold leading-tight text-white">
               {currentPhase.name}
             </p>
-            <p className="mt-3 text-ink-muted">Planned {currentPhase.plannedDates}</p>
+            <p className="mt-3 text-white/60">Planned {currentPhase.plannedDates}</p>
 
             <div className="mt-8">
-              <PhaseStrip phases={phases} currentId={currentPhase.id} />
+              <PhaseStrip phases={phases} currentId={currentPhase.id} tone="dark" />
             </div>
           </div>
 
           <div>
             <div className="mb-2 flex items-baseline justify-between">
-              <span className="eyebrow">Overall progress</span>
-              <span className="font-mono text-2xl font-semibold text-ink">{completion}%</span>
+              <span className="font-mono text-micro font-medium uppercase text-white/50">
+                Overall progress
+              </span>
+              <span className="font-mono text-2xl font-semibold text-white">{completion}%</span>
             </div>
-            <ProgressBar value={completion} label={`Overall progress, ${completion} percent`} />
-            <p className="mt-2 text-[0.875rem] text-ink-muted">{completionDisclaimer}</p>
+            <ProgressBar value={completion} label={`Overall progress, ${completion} percent`} tone="dark" />
+            <p className="mt-2 text-[0.875rem] text-white/50">{completionDisclaimer}</p>
 
             <dl className="mt-8 grid grid-cols-2 gap-x-6 gap-y-6">
               {stats.map((stat) => (
-                <div key={stat.label} className="border-t border-rule pt-3">
-                  <dt className="eyebrow">{stat.label}</dt>
-                  <dd className="mt-1 font-mono text-3xl font-semibold text-ink">{stat.value}</dd>
+                <div key={stat.label} className="border-t border-white/15 pt-3">
+                  <dt className="font-mono text-micro font-medium uppercase text-white/50">
+                    {stat.label}
+                  </dt>
+                  <dd className="mt-1 font-mono text-3xl font-semibold text-white">{stat.value}</dd>
                 </div>
               ))}
             </dl>
