@@ -87,52 +87,48 @@ export default function HomePage() {
       {/* Status — the block that answers "where is this project right now?" */}
       <section
         aria-labelledby="status-heading"
-        className="rounded-card bg-ink p-7 text-white sm:p-9"
+        className="rounded-card border border-material-leather/30 bg-material-foam p-7 sm:p-9"
       >
-        <h2 id="status-heading" className="font-mono text-micro font-medium uppercase text-white/50 mb-7">
+        <h2 id="status-heading" className="eyebrow mb-7">
           Where the project stands
         </h2>
 
         <div className="grid gap-10 lg:grid-cols-[1.15fr_1fr] lg:gap-14">
           <div>
-            <p className="font-mono text-micro text-uf-orange-bright">
+            <p className="font-mono text-micro text-uf-orange-deep">
               Phase {currentPhase.number} of {phases.length}
             </p>
-            <p className="mt-2 text-3xl font-semibold leading-tight text-white">
+            <p className="mt-2 text-3xl font-semibold leading-tight text-ink">
               {currentPhase.name}
             </p>
-            <p className="mt-3 text-white/60">Planned {currentPhase.plannedDates}</p>
+            <p className="mt-3 text-ink-muted">Planned {currentPhase.plannedDates}</p>
 
             <div className="mt-8">
-              <PhaseStrip phases={phases} currentId={currentPhase.id} tone="dark" />
+              <PhaseStrip phases={phases} currentId={currentPhase.id} tone="beige" />
             </div>
           </div>
 
           <div>
             <div className="mb-2 flex items-baseline justify-between">
-              <span className="font-mono text-micro font-medium uppercase text-white/50">
-                Overall progress
-              </span>
-              <span className="font-mono text-2xl font-semibold text-white">{completion}%</span>
+              <span className="eyebrow">Overall progress</span>
+              <span className="font-mono text-2xl font-semibold text-ink">{completion}%</span>
             </div>
-            <ProgressBar value={completion} label={`Overall progress, ${completion} percent`} tone="dark" />
+            <ProgressBar value={completion} label={`Overall progress, ${completion} percent`} tone="beige" />
 
             <dl className="mt-8 grid grid-cols-2 gap-x-6 gap-y-6">
               {stats.map((stat) => (
-                <div key={stat.label} className="border-t border-white/15 pt-3">
-                  <dt className="font-mono text-micro font-medium uppercase text-white/50">
-                    {stat.label}
-                  </dt>
-                  <dd className="mt-1 font-mono text-3xl font-semibold text-white">{stat.value}</dd>
+                <div key={stat.label} className="border-t border-material-leather-deep/30 pt-3">
+                  <dt className="eyebrow">{stat.label}</dt>
+                  <dd className="mt-1 font-mono text-3xl font-semibold text-ink">{stat.value}</dd>
                 </div>
               ))}
             </dl>
           </div>
         </div>
 
-        <p className="mt-9 border-t border-white/15 pt-6 text-white/60">
+        <p className="mt-9 border-t border-material-leather-deep/30 pt-6 text-ink-muted">
           Last updated {latest ? formatDate(latest.date) : 'not yet published'}.{' '}
-          <Link href="/roadmap" className="text-white underline underline-offset-2 hover:text-uf-orange-bright">
+          <Link href="/roadmap" className="text-uf-blue hover:underline">
             See the full roadmap
           </Link>
         </p>
@@ -186,10 +182,11 @@ export default function HomePage() {
                   style={
                     {
                       borderColor: `${accent}4D`,
+                      color: accent,
                       '--glow': accent,
                     } as React.CSSProperties
                   }
-                  className="group flex h-full items-center justify-center rounded-2xl border bg-ink p-6 text-center font-semibold text-white shadow-[0_0_18px_-10px_var(--glow)] transition-all duration-300 hover:-translate-y-0.5 hover:border-[var(--glow)] hover:shadow-[0_0_28px_-6px_var(--glow)]"
+                  className="group flex h-full items-center justify-center rounded-2xl border bg-material-foam p-6 text-center font-semibold shadow-[0_0_14px_-10px_var(--glow)] transition-all duration-300 hover:-translate-y-0.5 hover:border-[var(--glow)] hover:shadow-[0_0_22px_-8px_var(--glow)]"
                 >
                   {item.label}
                 </Link>

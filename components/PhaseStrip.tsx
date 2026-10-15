@@ -17,8 +17,8 @@ export function PhaseStrip({
   phases: ResearchPhase[];
   currentId: string;
   showLabels?: boolean;
-  /** 'dark' reads on a near-black band, e.g. the homepage status panel. */
-  tone?: 'light' | 'dark';
+  /** 'dark' reads on a near-black band; 'beige' reads on the foam-colored status panel. */
+  tone?: 'light' | 'dark' | 'beige';
 }) {
   const currentIndex = phases.findIndex((phase) => phase.id === currentId);
 
@@ -45,7 +45,9 @@ export function PhaseStrip({
                       !current &&
                       (tone === 'dark'
                         ? 'bg-white/15 group-hover:bg-white/25'
-                        : 'bg-rule group-hover:bg-rule-strong')
+                        : tone === 'beige'
+                          ? 'bg-material-leather-deep'
+                          : 'bg-rule group-hover:bg-rule-strong')
                   )}
                 />
                 <span className="sr-only">
@@ -62,7 +64,7 @@ export function PhaseStrip({
         <div
           className={cn(
             'mt-2 flex justify-between font-mono text-micro uppercase',
-            tone === 'dark' ? 'text-white/55' : 'text-ink-faint'
+            tone === 'dark' ? 'text-white/55' : tone === 'beige' ? 'text-ink-muted' : 'text-ink-faint'
           )}
         >
           <span>Phase 1</span>

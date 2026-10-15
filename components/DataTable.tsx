@@ -74,8 +74,8 @@ export function ProgressBar({
   value: number;
   label: string;
   size?: 'sm' | 'md';
-  /** 'dark' reads on a near-black band, e.g. the homepage status panel. */
-  tone?: 'light' | 'dark';
+  /** 'dark' reads on a near-black band; 'beige' reads on the foam-colored status panel. */
+  tone?: 'light' | 'dark' | 'beige';
 }) {
   const clamped = Math.max(0, Math.min(100, Math.round(value)));
   return (
@@ -87,7 +87,7 @@ export function ProgressBar({
       aria-label={label}
       className={cn(
         'w-full overflow-hidden rounded-full',
-        tone === 'dark' ? 'bg-white/15' : 'bg-paper-sunken',
+        tone === 'dark' ? 'bg-white/15' : tone === 'beige' ? 'bg-material-leather-deep/30' : 'bg-paper-sunken',
         size === 'sm' ? 'h-1.5' : 'h-2'
       )}
     >

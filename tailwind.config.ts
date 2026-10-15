@@ -42,12 +42,14 @@ const config: Config = {
           'blue-deep': '#00187A',
           orange: '#C43A0E', // darkened from #FA4616 for AA contrast on light backgrounds
           'orange-soft': '#FBEAE3',
-          'orange-bright': '#FF6A33', // brightened for AA contrast as text on dark surfaces (e.g. the homepage status band)
+          'orange-bright': '#FF6A33', // brightened for AA contrast as text on dark surfaces
+          'orange-deep': '#AD330C', // darkened for AA contrast as text on the foam-beige status panel
         },
         material: {
           foam: '#E4E0D6',
           rubber: '#2C2E33',
           leather: '#9C8468',
+          'leather-deep': '#8F7A5E', // darkened for 3:1+ non-text contrast against the foam panel (progress tracks, dividers)
           textile: '#7E8B93',
         },
         section: {
