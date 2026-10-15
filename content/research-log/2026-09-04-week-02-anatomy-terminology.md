@@ -4,7 +4,7 @@ date: "2026-09-04"
 endDate: "2026-09-05"
 week: 2
 semester: "Fall 2026"
-phase: "Sneaker Anatomy and Benchmarking"
+phase: "Footwear Anatomy and Product Benchmarking"
 status: "complete"
 hours: 8
 featuredImage: "/images/sneaker-anatomy-diagram.png"

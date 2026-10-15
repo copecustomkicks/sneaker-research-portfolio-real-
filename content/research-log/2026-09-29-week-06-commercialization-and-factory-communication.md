@@ -4,7 +4,7 @@ date: "2026-09-29"
 endDate: "2026-10-01"
 week: 6
 semester: "Fall 2026"
-phase: "Manufacturing and Assembly Process Research"
+phase: "Reverse Engineering and Technical Documentation"
 status: "complete"
 hours: 13
 summary: "FASH 912 moved downstream from documenting a shoe to confirming it, diagnosing manufacturing/BOM errors systematically, and communicating revisions to a factory — including a BOM error-analysis exercise against a finished shoe."

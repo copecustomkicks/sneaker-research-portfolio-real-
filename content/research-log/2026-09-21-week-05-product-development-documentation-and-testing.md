@@ -4,7 +4,7 @@ date: "2026-09-21"
 endDate: "2026-09-27"
 week: 5
 semester: "Fall 2026"
-phase: "Performance Requirements and Concept Development"
+phase: "Concept Evaluation and Design Requirements"
 status: "complete"
 hours: 14
 summary: "A Puma RS-X component and construction callout exercise, followed by FASH 912 coverage of tech packs, the bill of materials, costing, sample-room-versus-mass-production limits, and material/wear testing — moving past component identification into how developers actually document and validate a shoe."

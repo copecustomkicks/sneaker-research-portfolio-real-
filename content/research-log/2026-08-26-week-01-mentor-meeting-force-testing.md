@@ -3,7 +3,7 @@ title: "Week 01: Mentor meeting and fall research direction"
 date: "2026-08-26"
 week: 1
 semester: "Fall 2026"
-phase: "Project Definition and Background Research"
+phase: "Project Definition and Research Objectives"
 status: "complete"
 hours: 1
 summary: "Met with Dr. Allen to set fall research direction. Teardown plan stays, but force testing on intact shoes comes first — insoles versus force plates — to relate ground reaction force to sole material."

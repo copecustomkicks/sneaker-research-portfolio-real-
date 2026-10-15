@@ -3,7 +3,7 @@ title: 'Week 00: Portfolio Setup and Research Planning'
 date: '2026-08-24'
 week: 0
 semester: 'Fall 2026'
-phase: 'Project Definition and Background Research'
+phase: 'Project Definition and Research Objectives'
 status: 'complete'
 hours: 0
 summary: 'Established the research portfolio structure, the weekly documentation workflow, and a preliminary framing of the research question. No research findings yet.'

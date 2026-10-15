@@ -4,7 +4,7 @@ date: "2026-09-08"
 endDate: "2026-09-12"
 week: 3
 semester: "Fall 2026"
-phase: "Performance Requirements and Concept Development"
+phase: "Concept Evaluation and Design Requirements"
 status: "complete"
 hours: 11
 summary: "Outlined three candidate prototype directions, reviewed five sources on Achilles loading, arch support, footwear comfort, and 3D-printed lattice midsoles, and used the findings to sharpen each direction's design variables. The final concept stays intentionally open."

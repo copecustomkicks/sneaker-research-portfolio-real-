@@ -4,7 +4,7 @@ date: "2026-10-05"
 endDate: "2026-10-15"
 week: 7
 semester: "Fall 2026"
-phase: "Manufacturing and Assembly Process Research"
+phase: "Reverse Engineering and Technical Documentation"
 status: "complete"
 hours: 15
 summary: "Started a reverse tech pack for the Nike Air Force 1 Low, reconstructing the documentation a factory would need, oriented around the shoe's original 1983 product context rather than a modern relaunch. Ran alongside the final week of FASH 912 (manufacturing problem-solving, factory communication) and two industry briefings."

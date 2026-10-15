@@ -4,7 +4,7 @@ date: "2026-09-15"
 endDate: "2026-09-19"
 week: 4
 semester: "Fall 2026"
-phase: "Sneaker Anatomy and Benchmarking"
+phase: "Footwear Anatomy and Product Benchmarking"
 status: "complete"
 hours: 20
 summary: "First week of my parallel Footwear Product Development course (FASH 912): the developer/designer/PLM roles, the last's role in fit and construction, midsole manufacturing methods, stack height vs. drop, and component-labeling conventions — applied to two real-shoe component callout studies."

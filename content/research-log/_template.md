@@ -32,7 +32,7 @@ week: 0
 semester: 'Fall 2026'
 # Use a phase name exactly as it appears in data/phases.ts so the entry links
 # back to the roadmap correctly.
-phase: 'Project Definition and Background Research'
+phase: 'Project Definition and Research Objectives'
 # One of: complete | in-progress | blocked | deferred | not-started
 status: 'complete'
 # Actual hours worked. Record what happened, not what was planned.

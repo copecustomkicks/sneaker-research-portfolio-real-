@@ -102,7 +102,7 @@ export const overviewSections: OverviewSection[] = [
     preliminary: true,
     body: [scopeDisclaimer],
     list: [
-      'One prototype category, chosen in Phase 5.',
+      'One prototype category, chosen in Phase 6.',
       'One size, built around a single last.',
       'Component experiments — bonds, seams, foam samples, pattern tests — alongside whole-shoe builds.',
       'Materials obtainable in small quantities, with no factory minimum order.',
