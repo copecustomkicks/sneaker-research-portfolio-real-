@@ -12,7 +12,6 @@ import { getSectionForPath, sectionThemes } from '@/lib/sections';
 import { getCurrentPhase, getOverallCompletion, phases } from '@/data/phases';
 import { getRealSources } from '@/data/sources';
 import { prototypes } from '@/data/prototypes';
-import { completionDisclaimer } from '@/lib/metrics';
 import { formatDate, pluralize, sumBy } from '@/lib/utils';
 
 export const metadata: Metadata = {
@@ -117,7 +116,6 @@ export default function HomePage() {
               <span className="font-mono text-2xl font-semibold text-white">{completion}%</span>
             </div>
             <ProgressBar value={completion} label={`Overall progress, ${completion} percent`} tone="dark" />
-            <p className="mt-2 text-[0.875rem] text-white/50">{completionDisclaimer}</p>
 
             <dl className="mt-8 grid grid-cols-2 gap-x-6 gap-y-6">
               {stats.map((stat) => (

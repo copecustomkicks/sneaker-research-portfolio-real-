@@ -45,6 +45,10 @@ tags:
 
 A 13-document historical-reconstruction tech pack outline for the Air Force 1 Low. These are reference/reconstruction materials, not verified original Nike factory records, and not yet checked against the physical reference shoe.
 
+![The researcher's physical reference pair: an all-white Nike Air Force 1 Low, size 7Y, photographed on carpet](/images/air-force-1-reference-sample.jpg)
+
+*The physical reference sample used for this reverse tech pack — photographed by Aidan Copeland. Not yet examined for construction or material detail; that's next.*
+
 ## Next steps
 
 - Review the tech pack for internal consistency.

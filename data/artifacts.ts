@@ -128,6 +128,22 @@ export const artifacts: Artifact[] = [
     attributionNotes:
       'Corrections and analysis by the researcher as a course exercise; the base BOM worksheet is course material, not a real company’s proprietary document.',
   },
+  {
+    id: 'art-air-force-1-reference-sample',
+    title: 'Air Force 1 Low reference sample',
+    date: '2026-10-15',
+    type: 'photograph',
+    description:
+      'The researcher’s own physical reference pair for the Week 7 reverse tech pack: an all-white Nike Air Force 1 Low, size 7Y.',
+    caption:
+      'Photographed ahead of physical examination. Construction and material detail have not been recorded yet.',
+    src: '/images/air-force-1-reference-sample.jpg',
+    alt: 'An all-white Nike Air Force 1 Low sneaker pair photographed on a carpeted floor',
+    phaseId: 'phase-04',
+    relatedLogSlug: '2026-10-05-week-07-reverse-tech-pack-air-force-1',
+    attributionNotes:
+      'Photograph of the researcher’s own physical pair, taken by the researcher.',
+  },
 ];
 
 /*

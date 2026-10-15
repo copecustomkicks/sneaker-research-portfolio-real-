@@ -106,7 +106,7 @@ export const phases: ResearchPhase[] = [
     status: 'in-progress',
     plannedDates: 'Oct 2026',
     actualDates: 'Started Sep 2026',
-    completion: 15,
+    completion: 20,
     objectives: [
       'Document the standard sequence from pattern to finished shoe',
       'Identify which processes are reproducible with available equipment',
@@ -119,7 +119,7 @@ export const phases: ResearchPhase[] = [
     ],
     relatedLinks: [{ label: 'Manufacturing processes', href: '/processes' }],
     notes:
-      'The process reference lists a full pattern-to-shoe sequence, but only four entries (last selection, cemented construction, strobel construction, vulcanized construction) are actually cited to a source — the rest are unverified starter content, the same kind of placeholder the materials page was reset to remove. Held at 15% to reflect the real, sourced fraction, with some credit for genuine manufacturing-adjacent coursework (tooling, costing, lean manufacturing) in the FASH 912 class. No equipment-access assessment or safety review has been done yet.',
+      'The process reference lists a full pattern-to-shoe sequence, but only four entries (last selection, cemented construction, strobel construction, vulcanized construction) are actually cited to a source — the rest are unverified starter content, the same kind of placeholder the materials page was reset to remove. Week 7 added a full 13-category reverse-tech-pack exercise (Nike Air Force 1 Low) and the final FASH 912 modules on manufacturing-constraint evaluation and factory communication, which is real additional documentation-process work — moved to 20% to reflect that. Still capped well below half: the reverse tech pack is an unverified historical reconstruction, not yet checked against the physical reference shoe, and no equipment-access assessment or safety review has been done.',
   },
   {
     id: 'phase-05',
