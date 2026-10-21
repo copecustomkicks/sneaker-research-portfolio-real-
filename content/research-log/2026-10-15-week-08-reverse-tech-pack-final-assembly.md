@@ -29,9 +29,9 @@ This week I turned last week's Air Force 1 Low outline into a complete, assemble
 
 - **Assembled the tech pack.** Organized the document set behind a document index, with consistent title blocks across all eight technical sheets (Rev 1, sample size U.S. Men's 9). Kept the product positioning in its original Fall 1983 basketball context — era competitors (adidas Top Ten, Converse Pro Leather), a low-top variation of the existing high-top last — rather than presenting it as a new shoe.
 - **Callouts.** Identified and numbered 24 components across lateral, medial, heel, and top views, then mapped each to a material and a construction method (hole-punch perforations and eyelets, single vs. double stitching, overlays tucked under the heel tab, stitched cupsole attachment).
-- **Reinforcements and padding.** Color-mapped the hidden structure: thermoplastic toe puff (0.5–0.8 mm), thermoplastic heel counter (1.0–1.5 mm), nonwoven eyestay reinforcement (0.4–0.8 mm), and woven collar/heel padding.
+- **Reinforcements and padding.** Color-mapped the hidden structure: thermoplastic toe puff (0.5–0.8 mm), thermoplastic heel counter (1.0–1.5 mm), nonwoven eyestay reinforcement (0.4–0.8 mm), and collar, heel, and tongue padding.
 - **Shell pattern and tooling.** Drew a top-down lay-flat shell pattern with dimensioned pieces and seam/overlap conventions, and a tooling drawing for the cupsole: outsole plan and side views, a section through the encapsulated heel Air-Sole unit, a two-cavity compression-mold layout, and a spec table (P20 steel, 1.5% shrinkage allowance, pin ejectors in non-visible areas).
-- **BOM and costing.** Built a BOM with part IDs, material IDs, quantities, purchase units, and per-pair cost, totaling $9.00 in materials. Rolled it into a cost breakdown: $9.00 materials + $0.50 packaging + $3.50 labor, overhead, and factory profit = $13.00 target FOB against a $65.00 retail / $32.50 wholesale price.
+- **BOM and costing.** Built a BOM with part IDs, material IDs, quantities, purchase units, and per-pair cost, totaling $9.00 in materials. Did a line-by-line review pass that caught a misaligned spec column and a skipped part number, and corrected both before finalizing. Rolled it into a cost breakdown: $9.00 materials + $0.50 packaging + $3.50 labor, overhead, and factory profit = $13.00 target FOB against a $65.00 retail / $32.50 wholesale price.
 - **Calendar, wear test, and release.** Planned an 18-month workback with three review gates ending at an August 1983 retail launch; a wear test of 16 pairs (12 test + 4 reserve) running fit-and-feel, dynamic, short-term, and long-term phases with a change freeze during testing; and a factory email releasing the pack with sample-due dates for each gate.
 - **Manufacturing problem-solving (FASH 912).** Worked through a development issues-and-solutions exercise: plate-to-upper bond weakness on a cleat (inspect the bond before choosing a fix), internal layer adhesion across sockliner, insole, and Strobel construction, toe-area rubbing (more toe puff reinforcement or localized padding), and heel pressure and slip (added heel padding combined with fit adjustments). These are proposed corrective actions from a course exercise, not tested fixes.
 - **Factory communication.** Wrote revision-style communication that separates suspected cause from confirmed finding and organizes each request around what the factory has to execute.
@@ -51,7 +51,7 @@ This week I turned last week's Air Force 1 Low outline into a complete, assemble
 
 ## Evidence and artifacts
 
-The full tech pack is viewable and downloadable at the top of this entry. Two of the technical sheets:
+The full 15-page tech pack is viewable and downloadable at the top of this entry. Three of the core sheets:
 
 ![Material callouts sheet for the Air Force 1 Low: lateral, medial, heel, and top line drawings with 24 numbered components labeled by material — leather panels, polyester textile linings, flat woven polyester laces, polyester embroidery thread, rubber midsole and outsole, zinc-alloy dubrae, and hidden thermoplastic toe puff and heel counter reinforcements](/images/af1-material-callouts.jpg)
 
@@ -60,6 +60,10 @@ The full tech pack is viewable and downloadable at the top of this entry. Two of
 ![Tooling drawing sheet for the Air Force 1 Low cupsole: outsole bottom and side views at 289 mm length, section A-A through the encapsulated heel Air-Sole unit, heel and toe details, tread pattern detail, a two-cavity compression mold layout, and a tooling specification table](/images/af1-tooling-drawing.jpg)
 
 *Sheet 7 of 8 — tooling drawing.*
+
+![Bill of materials table for the Air Force 1 Low with 33 lines across upper, interior, and bottom categories, listing part ID, material ID, CAD callout number, visibility, quantity per pair, purchase unit, cost per unit and per pair, proposed material spec, color, and estimated source, totaling $9.00 in materials](/images/af1-bill-of-materials.jpg)
+
+*Bill of materials — 33 lines, $9.00 materials per pair. Sources are labeled illustrative.*
 
 *Student coursework for Lasell University FASH 912, Footwear Product Development. Not affiliated with or endorsed by Nike. All costs, dimensions, sourcing, and dates are my reconstructed estimates, not original Nike factory records, and the launch email is a role-play exercise. No samples were made and nothing was sent to a factory.*
 
@@ -83,5 +87,5 @@ This pack is a separate exercise from my University Scholars Program shoe, but i
 ## Next steps
 
 - Examine the physical Air Force 1 reference pair and record what matches or contradicts the reconstructed specs.
-- Review the BOM line by line for consistency between parts, material IDs, and material specs.
+- Split shared material IDs where one ID currently covers two different materials.
 - Carry the tech-pack template forward into concept selection for my own shoe.

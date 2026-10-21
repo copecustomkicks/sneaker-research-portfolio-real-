@@ -162,6 +162,23 @@ export const artifacts: Artifact[] = [
       'Student coursework by the researcher for Lasell University FASH 912. Not affiliated with or endorsed by Nike; not an original Nike document.',
   },
   {
+    id: 'art-af1-bill-of-materials',
+    title: 'Air Force 1 Low reverse tech pack — bill of materials',
+    date: '2026-10-21',
+    type: 'diagram',
+    description:
+      'The 33-line bill of materials from the researcher’s Air Force 1 Low reverse tech pack, covering upper, interior, and bottom components with quantities, units, per-pair cost, material spec, color, and estimated source.',
+    caption:
+      'Totals $9.00 in materials per pair, which feeds the $13.00 target FOB on the cost breakdown sheet. Costs and sources are reconstructed estimates; suppliers are labeled illustrative.',
+    src: '/images/af1-bill-of-materials.jpg',
+    alt: 'A spreadsheet-style bill of materials table with columns for part ID, category, part, material ID, CAD number, visibility, quantity, unit, cost, material spec, color, and source, ending in a $9.00 materials total',
+    phaseId: 'phase-04',
+    relatedLogSlug: '2026-10-15-week-08-reverse-tech-pack-final-assembly',
+    downloadHref: '/documents/air-force-1-low-reverse-tech-pack.pdf',
+    attributionNotes:
+      'Student coursework by the researcher for Lasell University FASH 912. Not affiliated with or endorsed by Nike; not an original Nike document.',
+  },
+  {
     id: 'art-af1-tooling-drawing',
     title: 'Air Force 1 Low reverse tech pack — tooling drawing',
     date: '2026-10-21',
