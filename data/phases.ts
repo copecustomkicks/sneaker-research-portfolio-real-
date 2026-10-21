@@ -110,7 +110,7 @@ export const phases: ResearchPhase[] = [
     status: 'in-progress',
     plannedDates: 'Oct 2026',
     actualDates: 'Started Sep 2026',
-    completion: 35,
+    completion: 50,
     objectives: [
       'Reverse-engineer a benchmark shoe into a complete factory-facing technical document set',
       'Practice the documentation and communication standards real developers use — BOM precision, factory revision communication, structured failure diagnosis',
@@ -126,7 +126,7 @@ export const phases: ResearchPhase[] = [
       { label: 'Gallery', href: '/gallery' },
     ],
     notes:
-      'A BOM error-analysis exercise and a full 13-category reverse tech pack for the Nike Air Force 1 Low (oriented around its original 1983 context) are drafted, along with a photo of the physical reference pair. Held at 35%, not higher: the tech pack is still an outline-level historical reconstruction, not checked against the physical shoe, and no teardown or measurement has happened yet — that is the next step.',
+      'A BOM error-analysis exercise is done, and the Nike Air Force 1 Low reverse tech pack (original 1983 context) is now assembled as a 15-page Rev 1 document — callouts, BOM, shell pattern, tooling, costing, workback calendar, wear-test plan, and factory release email. Held at 50%, not higher: the pack is still a reconstruction not checked against the physical reference pair, and no teardown or measurement has happened yet — that is the next step.',
   },
   {
     id: 'phase-05',

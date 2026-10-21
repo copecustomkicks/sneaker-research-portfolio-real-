@@ -141,6 +141,10 @@ export async function getLogEntry(slug: string): Promise<ResearchLogEntry | null
     readingMinutes: estimateReadingMinutes(plainText),
     featuredImage: data.featuredImage ? String(data.featuredImage) : undefined,
     featuredImageAlt: data.featuredImageAlt ? String(data.featuredImageAlt) : undefined,
+    document: data.document ? String(data.document) : undefined,
+    documentTitle: data.documentTitle ? String(data.documentTitle) : undefined,
+    documentMeta: data.documentMeta ? String(data.documentMeta) : undefined,
+    documentNote: data.documentNote ? String(data.documentNote) : undefined,
   };
 }
 

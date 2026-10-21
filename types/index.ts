@@ -114,6 +114,11 @@ export interface ResearchLogEntry extends ResearchLogSummary {
   readingMinutes: number;
   featuredImage?: string;
   featuredImageAlt?: string;
+  /** Optional PDF shown in a viewer at the top of the entry. */
+  document?: string;
+  documentTitle?: string;
+  documentMeta?: string;
+  documentNote?: string;
 }
 
 /* ------------------------------------------------------------------ */

@@ -6,6 +6,7 @@ import { SpecRail } from '@/components/Section';
 import { Callout } from '@/components/Callout';
 import { Badge, StatusBadge } from '@/components/Badge';
 import { Prose } from '@/components/Prose';
+import { DocumentViewer } from '@/components/DocumentViewer';
 import { getLogEntry, getLogSlugs, getAdjacentEntries } from '@/lib/log';
 import { getPhaseByName } from '@/data/phases';
 import { formatDateRange, pluralize } from '@/lib/utils';
@@ -110,6 +111,17 @@ export default async function ResearchLogEntryPage({ params }: PageProps) {
               This entry was written when the portfolio was set up. It documents planning and site
               configuration, not verified research findings. Replace or revise it as the project develops.
             </Callout>
+          </div>
+        )}
+
+        {entry.document && (
+          <div className="pt-8">
+            <DocumentViewer
+              href={entry.document}
+              title={entry.documentTitle ?? entry.title}
+              meta={entry.documentMeta}
+              note={entry.documentNote}
+            />
           </div>
         )}
 

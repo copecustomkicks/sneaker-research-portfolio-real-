@@ -144,6 +144,40 @@ export const artifacts: Artifact[] = [
     attributionNotes:
       'Photograph of the researcher’s own physical pair, taken by the researcher.',
   },
+  {
+    id: 'art-af1-material-callouts',
+    title: 'Air Force 1 Low reverse tech pack — material callouts',
+    date: '2026-10-21',
+    type: 'diagram',
+    description:
+      'Sheet 3 of 8 from the researcher’s Air Force 1 Low reverse tech pack: 24 numbered components mapped to their materials across lateral, medial, heel, and top views.',
+    caption:
+      'Includes the hidden thermoplastic toe puff and heel counter reinforcements. Reconstructed, not yet checked against the physical reference pair.',
+    src: '/images/af1-material-callouts.jpg',
+    alt: 'Line drawings of an Air Force 1 Low from four views with labels naming the material of each numbered component, such as leather, polyester textile lining, polyester embroidery thread, rubber, and zinc alloy',
+    phaseId: 'phase-04',
+    relatedLogSlug: '2026-10-15-week-08-reverse-tech-pack-final-assembly',
+    downloadHref: '/documents/air-force-1-low-reverse-tech-pack.pdf',
+    attributionNotes:
+      'Student coursework by the researcher for Lasell University FASH 912. Not affiliated with or endorsed by Nike; not an original Nike document.',
+  },
+  {
+    id: 'art-af1-tooling-drawing',
+    title: 'Air Force 1 Low reverse tech pack — tooling drawing',
+    date: '2026-10-21',
+    type: 'diagram',
+    description:
+      'Sheet 7 of 8 from the researcher’s Air Force 1 Low reverse tech pack: cupsole plan, side, and section views, a two-cavity compression-mold layout, and a tooling specification table.',
+    caption:
+      'Dimensions are for U.S. Men’s 9 with a 1.5% shrinkage allowance. Reconstructed estimates, subject to the factory review noted on the sheet.',
+    src: '/images/af1-tooling-drawing.jpg',
+    alt: 'Technical drawing of a sneaker cupsole showing the outsole tread from below, a side profile, a cross-section through the heel air unit, and two mold cavities side by side',
+    phaseId: 'phase-04',
+    relatedLogSlug: '2026-10-15-week-08-reverse-tech-pack-final-assembly',
+    downloadHref: '/documents/air-force-1-low-reverse-tech-pack.pdf',
+    attributionNotes:
+      'Student coursework by the researcher for Lasell University FASH 912. Not affiliated with or endorsed by Nike; not an original Nike document.',
+  },
 ];
 
 /*
