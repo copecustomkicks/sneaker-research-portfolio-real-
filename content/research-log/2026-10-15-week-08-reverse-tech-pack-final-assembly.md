@@ -6,7 +6,7 @@ week: 8
 semester: "Fall 2026"
 phase: "Reverse Engineering and Technical Documentation"
 status: "complete"
-hours: 24.25
+hours: 25
 summary: "Took the Nike Air Force 1 Low reverse tech pack from a 13-part outline to an assembled 15-page Rev 1 document — callouts, BOM, shell pattern, tooling, costing, workback calendar, wear-test plan, and factory release email — and worked through FASH 912's manufacturing-failure diagnosis and factory-communication exercises."
 document: "/documents/air-force-1-low-reverse-tech-pack.pdf"
 documentTitle: "Nike Air Force 1 Low — Reverse Tech Pack (Rev 1)"
@@ -105,7 +105,7 @@ The full 15-page tech pack is viewable and downloadable at the top of this entry
 
 ## Time
 
-24.25 hours reported for Oct 15–21, from scheduled calendar blocks plus logged supplementary work — not an audited timesheet.
+25 hours reported for Oct 15–21, from scheduled calendar blocks plus logged supplementary work — not an audited timesheet.
 
 | Date | Activity | Hours |
 | --- | --- | ---: |
@@ -113,8 +113,8 @@ The full 15-page tech pack is viewable and downloadable at the top of this entry
 | Oct 17 | Tech pack development | 4.50 |
 | Oct 18 | Tech pack development and factory communication | 9.50 |
 | Oct 19 | Tech pack submission work | 1.50 |
-| — | Supplementary project work | 3.00 |
-| **Total** | | **24.25** |
+| — | Supplementary project work | 3.75 |
+| **Total** | | **25.00** |
 
 ## Connection to my own sneaker
 
