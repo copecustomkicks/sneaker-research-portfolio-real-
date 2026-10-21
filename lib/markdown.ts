@@ -32,6 +32,7 @@ export function toPlainText(markdown: string): string {
     .replace(/!\[[^\]]*\]\([^)]*\)/g, ' ')
     .replace(/\[([^\]]*)\]\([^)]*\)/g, '$1')
     .replace(/<!--[\s\S]*?-->/g, ' ')
+    .replace(/\{\{photos\}\}/g, ' ')
     .replace(/<[^>]+>/g, ' ')
     .replace(/^[#>\-*+]\s+/gm, ' ')
     .replace(/[*_~]/g, '')

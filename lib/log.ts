@@ -145,6 +145,15 @@ export async function getLogEntry(slug: string): Promise<ResearchLogEntry | null
     documentTitle: data.documentTitle ? String(data.documentTitle) : undefined,
     documentMeta: data.documentMeta ? String(data.documentMeta) : undefined,
     documentNote: data.documentNote ? String(data.documentNote) : undefined,
+    photos: Array.isArray(data.photos)
+      ? (data.photos as Record<string, unknown>[])
+          .filter((p) => p && typeof p.src === 'string' && typeof p.alt === 'string')
+          .map((p) => ({
+            src: String(p.src),
+            alt: String(p.alt),
+            caption: p.caption ? String(p.caption) : undefined,
+          }))
+      : undefined,
   };
 }
 

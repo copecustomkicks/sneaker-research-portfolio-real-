@@ -126,7 +126,7 @@ export const phases: ResearchPhase[] = [
       { label: 'Gallery', href: '/gallery' },
     ],
     notes:
-      'A BOM error-analysis exercise is done, and the Nike Air Force 1 Low reverse tech pack (original 1983 context) is now assembled as a 15-page Rev 1 document — callouts, BOM, shell pattern, tooling, costing, workback calendar, wear-test plan, and factory release email. Held at 50%, not higher: the pack is still a reconstruction not checked against the physical reference pair, and no teardown or measurement has happened yet — that is the next step.',
+      'A BOM error-analysis exercise is done, and the Nike Air Force 1 Low reverse tech pack (original 1983 context) is now assembled as a 15-page Rev 1 document — callouts, BOM, shell pattern, tooling, costing, workback calendar, wear-test plan, and factory release email. Held at 50%, not higher: the pack is still a reconstruction not checked against the physical reference pair, and the teardown has only started (photographed and sectioned, not yet measured or compared against the specs).',
   },
   {
     id: 'phase-05',

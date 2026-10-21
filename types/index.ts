@@ -119,6 +119,8 @@ export interface ResearchLogEntry extends ResearchLogSummary {
   documentTitle?: string;
   documentMeta?: string;
   documentNote?: string;
+  /** Optional photo carousel, placed where `{{photos}}` appears in the body. */
+  photos?: { src: string; alt: string; caption?: string }[];
 }
 
 /* ------------------------------------------------------------------ */

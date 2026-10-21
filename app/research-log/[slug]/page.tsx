@@ -7,6 +7,7 @@ import { Callout } from '@/components/Callout';
 import { Badge, StatusBadge } from '@/components/Badge';
 import { Prose } from '@/components/Prose';
 import { DocumentViewer } from '@/components/DocumentViewer';
+import { PhotoCarousel } from '@/components/PhotoCarousel';
 import { getLogEntry, getLogSlugs, getAdjacentEntries } from '@/lib/log';
 import { getPhaseByName } from '@/data/phases';
 import { formatDateRange, pluralize } from '@/lib/utils';
@@ -146,7 +147,16 @@ export default async function ResearchLogEntryPage({ params }: PageProps) {
         )}
 
         <div className="py-10">
-          <Prose html={entry.html} />
+          {entry.html.split('<p>{{photos}}</p>').map((part, i, parts) => (
+            <div key={i}>
+              <Prose html={part} />
+              {i < parts.length - 1 && entry.photos && entry.photos.length > 0 && (
+                <div className="max-w-prose">
+                  <PhotoCarousel photos={entry.photos} label="Teardown photos" />
+                </div>
+              )}
+            </div>
+          ))}
         </div>
       </article>
 
